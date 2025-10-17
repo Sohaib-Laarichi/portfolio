@@ -20,11 +20,11 @@
       "Développeur Full-Stack",
       "Administrateur Systèmes",
       "Ingénieur DevOps", 
-      "Expert Infrastructure Cloud",
+      "Ingénieur Infrastructure Cloud",
       "Développeur Java/Spring Boot",
       "Architecte Solutions Réseau"
     ],
-    "description": "Étudiant passionné en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Expert en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche activement une entreprise innovante pour appliquer et développer mon expertise dans la conception et le déploiement de solutions réseau et logicielles robustes.",
+    "description": "Étudiant en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Compétences en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche une opportunité professionnelle pour appliquer et développer mes compétences dans la conception et le déploiement de solutions réseau et logicielles.",
     "viewProjects": "Voir Mes Projets",
     "contactMe": "Me Contacter",
     "scrollDown": "Faire Défiler"
@@ -34,7 +34,7 @@
     "subtitle": "Apprenez à me connaître",
     "profile": {
       "title": "Profil Professionnel",
-      "description": "Actuellement en cours d'études d'ingénieur informatique à l'EMSI, je suis passionné par l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques innovantes tout en développant continuellement mon expertise en sécurité réseau et administration système."
+      "description": "Étudiant en génie informatique à l'EMSI, spécialisé dans l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques tout en développant mes compétences en sécurité réseau et administration système."
     },
     "education": {
       "title": "Formation & Éducation",
@@ -67,40 +67,40 @@
     "viewCertificate": "Voir Certificat",
     "items": {
       "networking": [
-        "Configuration Router & Switch",
-        "Déploiement Serveur (Windows Server, Linux)",
-        "Gestion LAN",
-        "Sécurité Réseau & Monitoring",
-        "Dépannage",
-        "Virtualisation",
-        "Cisco ISE"
+        "Configuration Cisco Router & Switch",
+        "Administration Windows Server 2019/2022",
+        "Administration Linux (Ubuntu, CentOS)",
+        "Protocoles TCP/IP, VLAN, OSPF",
+        "Sécurité réseau (Firewall, VPN)",
+        "VMware vSphere, Hyper-V",
+        "Cisco ISE (Identity Services Engine)"
       ],
       "programming": [
-        "Java",
-        "JavaScript",
+        "Java SE/EE",
+        "JavaScript ES6+",
         "Node.js",
-        "HTML/CSS",
+        "HTML5/CSS3",
         "TypeScript",
-        "Python",
+        "Python 3.x",
         "PowerShell"
       ],
       "databases": [
-        "MySQL",
+        "MySQL 8.0",
         "MongoDB",
         "Microsoft SQL Server",
-        "Oracle Database",
+        "Oracle Database 19c",
         "PostgreSQL",
-        "Azure Cloud",
-        "AWS"
+        "Microsoft Azure",
+        "Amazon Web Services"
       ],
       "tools": [
-        "JEE (Java Enterprise Edition)",
-        "Express.js",
-        "Next.js",
-        "React",
-        "Bootstrap",
+        "Spring Boot, Spring Security",
+        "Express.js Framework",
+        "Next.js 14/15",
+        "React 18",
+        "Bootstrap 5",
         "Tailwind CSS",
-        "Git"
+        "Git, GitHub"
       ]
     }
   },

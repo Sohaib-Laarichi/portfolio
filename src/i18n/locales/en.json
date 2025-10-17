@@ -20,11 +20,11 @@
       "Full-Stack Developer",
       "Systems Administrator",
       "DevOps Engineer",
-      "Cloud Infrastructure Expert",
+      "Cloud Infrastructure Engineer",
       "Java/Spring Boot Developer",
       "Network Solutions Architect"
     ],
-    "description": "Passionate Computer Engineering student at EMSI, specializing in network architecture, security, and systems administration. Expert in Java, Spring Boot, Next.js, and Cisco technologies. Actively seeking an innovative company to apply and develop my expertise in designing and deploying robust network and software solutions.",
+    "description": "Computer Engineering student at EMSI, specializing in network architecture, security, and systems administration. Skilled in Java, Spring Boot, Next.js, and Cisco technologies. Seeking a professional opportunity to apply and develop my skills in designing and deploying network and software solutions.",
     "viewProjects": "View My Projects",
     "contactMe": "Contact Me",
     "scrollDown": "Scroll Down"
@@ -34,7 +34,7 @@
     "subtitle": "Get to know me better",
     "profile": {
       "title": "Professional Profile",
-      "description": "Currently pursuing my Computer Engineering degree at EMSI, I am passionate about network infrastructure and cybersecurity. My goal is to contribute to innovative technological solutions while continuously expanding my expertise in network security and systems administration."
+      "description": "Pursuing my Computer Engineering degree at EMSI, specializing in network infrastructure and cybersecurity. My goal is to contribute to technological solutions while developing my skills in network security and systems administration."
     },
     "education": {
       "title": "Education & Training",
@@ -65,42 +65,44 @@
       "tools": "Development Tools"
     },
     "viewCertificate": "View Certificate",
-    "networking": [
-      "Router & Switch Configuration",
-      "Server Deployment (Windows Server, Linux)",
-      "LAN Management",
-      "Network Security & Monitoring",
-      "Troubleshooting",
-      "Virtualization",
-      "Cisco ISE"
-    ],
-    "programming": [
-      "Java",
-      "JavaScript",
-      "Node.js",
-      "HTML/CSS",
-      "TypeScript",
-      "Python",
-      "PowerShell"
-    ],
-    "databases": [
-      "MySQL",
-      "MongoDB",
-      "Microsoft SQL Server",
-      "Oracle Database",
-      "PostgreSQL",
-      "Azure Cloud",
-      "AWS"
-    ],
-    "tools": [
-      "JEE (Java Enterprise Edition)",
-      "Express.js",
-      "Next.js",
-      "React",
-      "Bootstrap",
-      "Tailwind CSS",
-      "Git"
-    ]
+    "items": {
+      "networking": [
+        "Cisco Router & Switch Configuration",
+        "Windows Server 2019/2022 Administration",
+        "Linux Administration (Ubuntu, CentOS)",
+        "TCP/IP Protocols, VLAN, OSPF",
+        "Network Security (Firewall, VPN)",
+        "VMware vSphere, Hyper-V",
+        "Cisco ISE (Identity Services Engine)"
+      ],
+      "programming": [
+        "Java SE/EE",
+        "JavaScript ES6+",
+        "Node.js",
+        "HTML5/CSS3",
+        "TypeScript",
+        "Python 3.x",
+        "PowerShell"
+      ],
+      "databases": [
+        "MySQL 8.0",
+        "MongoDB",
+        "Microsoft SQL Server",
+        "Oracle Database 19c",
+        "PostgreSQL",
+        "Microsoft Azure",
+        "Amazon Web Services"
+      ],
+      "tools": [
+        "Spring Boot, Spring Security",
+        "Express.js Framework",
+        "Next.js 14/15",
+        "React 18",
+        "Bootstrap 5",
+        "Tailwind CSS",
+        "Git, GitHub"
+      ]
+    }
   },
   "experience": {
     "title": "Professional Experience",

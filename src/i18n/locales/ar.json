@@ -20,11 +20,11 @@
       "مطور تطبيقات متكامل",
       "مدير أنظمة",
       "مهندس DevOps",
-      "خبير البنية التحتية السحابية",
+      "مهندس البنية التحتية السحابية",
       "مطور جافا/سبرينغ بوت",
       "مهندس حلول الشبكات"
     ],
-    "description": "طالب شغوف في هندسة الحاسوب بـ EMSI، متخصص في هندسة الشبكات والأمان وإدارة الأنظمة. خبير في جافا، سبرينغ بوت، Next.js، وتقنيات سيسكو. أبحث بنشاط عن شركة مبتكرة لتطبيق وتطوير خبرتي في تصميم ونشر حلول الشبكات والبرمجيات القوية.",
+    "description": "طالب في هندسة الحاسوب بـ EMSI، متخصص في هندسة الشبكات والأمان وإدارة الأنظمة. مهارات في جافا، سبرينغ بوت، Next.js، وتقنيات سيسكو. أبحث عن فرصة مهنية لتطبيق وتطوير مهاراتي في تصميم ونشر حلول الشبكات والبرمجيات.",
     "viewProjects": "عرض مشاريعي",
     "contactMe": "تواصل معي",
     "scrollDown": "التمرير لأسفل"
@@ -34,7 +34,7 @@
     "subtitle": "تعرف علي أكثر",
     "profile": {
       "title": "الملف المهني",
-      "description": "أتابع حالياً دراستي في هندسة الحاسوب بالمدرسة المغربية لعلوم المهندس، وأنا شغوف بالبنية التحتية للشبكات والأمن السيبراني. هدفي هو المساهمة في الحلول التكنولوجية المبتكرة مع التطوير المستمر لخبرتي في أمن الشبكات وإدارة الأنظمة."
+      "description": "أتابع حالياً دراستي في هندسة الحاسوب بالمدرسة المغربية لعلوم المهندس، متخصص في البنية التحتية للشبكات والأمن السيبراني. هدفي هو المساهمة في الحلول التكنولوجية مع تطوير مهاراتي في أمن الشبكات وإدارة الأنظمة."
     },
     "education": {
       "title": "التعليم والتدريب",
@@ -70,61 +70,40 @@
     },
     "items": {
       "networking": [
-        "Cisco Packet Tracer",
-        "أمن الشبكات",
-        "TCP/IP",
-        "VPN Configuration",
-        "إدارة جدران الحماية",
-        "بروتوكولات الشبكة",
-        "تصميم الشبكات",
-        "مراقبة الشبكة",
-        "استكشاف أخطاء الشبكة",
-        "VLAN Configuration"
+        "تكوين أجهزة Cisco Router و Switch",
+        "إدارة Windows Server 2019/2022",
+        "إدارة Linux (Ubuntu, CentOS)",
+        "بروتوكولات TCP/IP, VLAN, OSPF",
+        "أمان الشبكة (Firewall, VPN)",
+        "VMware vSphere, Hyper-V",
+        "Cisco ISE (Identity Services Engine)"
       ],
       "programming": [
-        "Java",
-        "Spring Boot",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Android Development",
-        "Python",
+        "Java SE/EE",
+        "JavaScript ES6+",
         "Node.js",
-        "REST APIs",
-        "GraphQL",
-        "Microservices",
-        "Docker",
-        "Kubernetes"
+        "HTML5/CSS3",
+        "TypeScript",
+        "Python 3.x",
+        "PowerShell"
       ],
       "databases": [
-        "MySQL",
-        "PostgreSQL",
+        "MySQL 8.0",
         "MongoDB",
-        "Firebase",
-        "Redis",
-        "Oracle Database",
-        "SQL Server",
-        "Database Design",
-        "Query Optimization",
-        "Data Modeling"
+        "Microsoft SQL Server",
+        "Oracle Database 19c",
+        "PostgreSQL",
+        "Microsoft Azure",
+        "Amazon Web Services"
       ],
       "tools": [
-        "VS Code",
-        "IntelliJ IDEA",
-        "Git",
-        "GitHub",
-        "Postman",
-        "Maven",
-        "Gradle",
-        "Jenkins",
-        "Linux",
-        "Windows Server",
-        "VMware",
-        "AWS",
-        "Azure",
-        "Bootstrap",
-        "Tailwind CSS"
+        "Spring Boot, Spring Security",
+        "Express.js Framework",
+        "Next.js 14/15",
+        "React 18",
+        "Bootstrap 5",
+        "Tailwind CSS",
+        "Git, GitHub"
       ]
     }
   },
