@@ -10,14 +10,21 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "SOHAIB LAARICHI",
+    "fullName": "Sohaib Laarichi",
+    "firstName": "Sohaib",
+    "lastName": "Laarichi",
+    "variations": ["Sohaib", "Laarichi", "Sohaib Laarichi", "SohaibLaarichi", "SOHAIB", "LAARICHI", "SOHAIB LAARICHI"],
     "titles": [
+      "Ingénieur Réseau & Logiciel",
       "Spécialiste Sécurité Réseau",
       "Développeur Full-Stack",
       "Administrateur Systèmes",
       "Ingénieur DevOps", 
-      "Expert Infrastructure Cloud"
+      "Expert Infrastructure Cloud",
+      "Développeur Java/Spring Boot",
+      "Architecte Solutions Réseau"
     ],
-    "description": "Étudiant passionné en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Je recherche activement une entreprise innovante pour appliquer et développer mon expertise dans la conception et le déploiement de solutions réseau robustes.",
+    "description": "Étudiant passionné en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Expert en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche activement une entreprise innovante pour appliquer et développer mon expertise dans la conception et le déploiement de solutions réseau et logicielles robustes.",
     "viewProjects": "Voir Mes Projets",
     "contactMe": "Me Contacter",
     "scrollDown": "Faire Défiler"

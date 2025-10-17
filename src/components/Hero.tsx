@@ -20,6 +20,12 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen w-full flex items-center justify-center bg-transparent relative">
+      {/* SEO Keywords cachés */}
+      <div className="sr-only">
+        <h1>Sohaib Laarichi - Portfolio Professionnel</h1>
+        <p>Sohaib, Laarichi, SohaibLaarichi, Sohaib Laarichi, Ingénieur Réseau, Network Engineer, Software Engineer, Développeur Full Stack, Morocco, Maroc, EMSI, Java, Spring Boot, Next.js, React, TypeScript, Cisco, Android, Kotlin, Portfolio, Freelance, Web Developer, Mobile Developer, Backend Developer, Frontend Developer</p>
+      </div>
+      
       <div className="w-full px-6 lg:px-12 xl:px-16 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
           {/* Left Column - Text Content */}

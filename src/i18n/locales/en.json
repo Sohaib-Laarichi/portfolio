@@ -8,16 +8,23 @@
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hello, I am",
+    "greeting": "Hello, I'm",
     "name": "SOHAIB LAARICHI",
+    "fullName": "Sohaib Laarichi",
+    "firstName": "Sohaib",
+    "lastName": "Laarichi",
+    "variations": ["Sohaib", "Laarichi", "Sohaib Laarichi", "SohaibLaarichi", "SOHAIB", "LAARICHI", "SOHAIB LAARICHI"],
     "titles": [
+      "Network & Software Engineer",
       "Network Security Specialist",
       "Full-Stack Developer",
-      "Systems Administrator", 
+      "Systems Administrator",
       "DevOps Engineer",
-      "Cloud Infrastructure Expert"
+      "Cloud Infrastructure Expert",
+      "Java/Spring Boot Developer",
+      "Network Solutions Architect"
     ],
-    "description": "A passionate Computer Engineering student at EMSI specializing in network architecture, security, and systems administration. Actively seeking an innovative company to apply and grow my expertise in designing and deploying robust network solutions.",
+    "description": "Passionate Computer Engineering student at EMSI, specializing in network architecture, security, and systems administration. Expert in Java, Spring Boot, Next.js, and Cisco technologies. Actively seeking an innovative company to apply and develop my expertise in designing and deploying robust network and software solutions.",
     "viewProjects": "View My Projects",
     "contactMe": "Contact Me",
     "scrollDown": "Scroll Down"
