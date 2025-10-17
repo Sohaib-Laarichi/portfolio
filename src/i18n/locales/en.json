@@ -94,7 +94,115 @@
     "title": "Featured Projects",
     "subtitle": "Some of my recent work",
     "viewProject": "View Project",
-    "viewCode": "View Code"
+    "viewCode": "View Code",
+    "viewDemo": "View Demo",
+    "items": {
+      "geobus": {
+        "title": "GeoBus - Bus Tracking System",
+        "description": "A comprehensive bus tracking system for Marrakech, Morocco, consisting of a Spring Boot backend and Android mobile app. The system provides real-time bus tracking, nearest bus stop finder, and arrival time estimation to improve public transportation experience.",
+        "category": "Mobile & Backend Development",
+        "features": [
+          "Real-time bus tracking on interactive maps",
+          "Nearest bus stop discovery based on user location",
+          "Walking time and bus arrival estimation",
+          "User authentication with JWT tokens",
+          "RESTful API with Spring Boot backend",
+          "Android app with MVVM architecture",
+          "MySQL database for bus stop and route data",
+          "Google Maps integration for visualization"
+        ]
+      },
+      "mkhedmin": {
+        "title": "Mkhedmin.ma - Moroccan Freelance Platform",
+        "description": "A freelance platform specifically designed for the Moroccan market, offering localized features like Moroccan city filters, RTL support for Arabic, and WhatsApp integration. The platform connects freelancers and clients with advanced communication tools.",
+        "category": "Full-Stack Web Platform",
+        "features": [
+          "Modern UI with Next.js 14",
+          "Robust Node.js backend with Express",
+          "MongoDB database for flexibility",
+          "Multi-language support (French, Arabic, English)",
+          "Secure authentication system",
+          "Morocco-specific geographical filters",
+          "WhatsApp integration for communication",
+          "Admin dashboard for platform management"
+        ]
+      },
+      "pharmalive": {
+        "title": "PharmaLive - Pharmacy Management",
+        "description": "Comprehensive pharmacy management system developed in Java EE with Bootstrap interface. Manages inventory, prescriptions, sales and provides detailed analytics to optimize pharmaceutical operations.",
+        "category": "Enterprise Application",
+        "features": [
+          "Complete medication inventory management",
+          "Prescription tracking and patient history",
+          "Sales analytics and financial reporting",
+          "Responsive UI with Bootstrap",
+          "MVC architecture with Java EE",
+          "Optimized MySQL database",
+          "Role-based access control",
+          "Encrypted and secure data storage"
+        ]
+      },
+      "callcenter": {
+        "title": "Call Center Desktop Application",
+        "description": "Call center application developed with JavaFX for modern UI components. Connected to MySQL database for customer management, call logging, and performance analytics.",
+        "category": "Desktop Application",
+        "features": [
+          "Customer management and interaction history",
+          "Call logging and tracking",
+          "Performance analytics and metrics",
+          "Modern JavaFX interface",
+          "Java-MySQL database connectivity",
+          "Clean separation of concerns with business logic layer",
+          "Role-based access control",
+          "Advanced reporting features"
+        ]
+      },
+      "reservation": {
+        "title": "Reservation Management System Swing",
+        "description": "Reservation management system developed in Java Swing with object-oriented programming. Integrates calendar, automated confirmations and complete reservation management.",
+        "category": "Desktop Application",
+        "features": [
+          "Booking management and integrated calendar",
+          "Automated email confirmations",
+          "Clean OOP architecture with separation of responsibilities",
+          "Java Swing user interface",
+          "Reservation conflict management",
+          "Integrated notification system",
+          "Reporting and reservation analytics",
+          "Multi-user support with permissions"
+        ]
+      },
+      "network": {
+        "title": "Network Infrastructure Project",
+        "description": "Complete network infrastructure design and implementation using Cisco equipment. VLAN configuration, routing protocols and network performance optimization.",
+        "category": "Network & Infrastructure",
+        "features": [
+          "Complete network design and implementation",
+          "Routing protocol configuration",
+          "Network security and performance optimization",
+          "VLAN configuration and network segmentation",
+          "Network monitoring and troubleshooting",
+          "Complete technical documentation",
+          "Performance testing and validation",
+          "User training and technical support"
+        ]
+      },
+      "cisco": {
+        "title": "Cisco ISE NAC Implementation",
+        "description": "Complete Cisco Identity Services Engine network access control deployment. Identity management, policy enforcement and compliance monitoring.",
+        "category": "Network Security",
+        "features": [
+          "Network access control deployment",
+          "Identity management and policy enforcement",
+          "Compliance monitoring and reporting",
+          "Advanced Cisco ISE configuration",
+          "Integration with existing infrastructure",
+          "Granular security policies",
+          "Real-time access monitoring",
+          "Security documentation and training"
+        ]
+      }
+    }
   },
   "contact": {
     "title": "Get In Touch",

@@ -94,7 +94,115 @@
     "title": "Projets en Vedette",
     "subtitle": "Quelques-uns de mes travaux récents",
     "viewProject": "Voir Projet",
-    "viewCode": "Voir Code"
+    "viewCode": "Voir Code",
+    "viewDemo": "Voir Démo",
+    "items": {
+      "geobus": {
+        "title": "GeoBus - Système de Tracking de Bus",
+        "description": "Un système complet de suivi de bus pour Marrakech, Maroc, composé d'un backend Spring Boot et d'une application mobile Android. Le système fournit un suivi en temps réel des bus, un localisateur d'arrêts les plus proches, et une estimation de l'heure d'arrivée pour améliorer l'expérience des transports en commun.",
+        "category": "Développement Mobile & Backend",
+        "features": [
+          "Suivi des bus en temps réel sur cartes interactives",
+          "Découverte des arrêts de bus les plus proches basée sur la localisation",
+          "Estimation du temps de marche et d'arrivée des bus",
+          "Authentification utilisateur avec tokens JWT",
+          "API RESTful avec backend Spring Boot",
+          "Application Android avec architecture MVVM",
+          "Base de données MySQL pour les données d'arrêts et itinéraires",
+          "Intégration Google Maps pour la visualisation"
+        ]
+      },
+      "mkhedmin": {
+        "title": "Mkhedmin.ma - Plateforme Freelance Marocaine",
+        "description": "Une plateforme freelance spécialement conçue pour le marché marocain, offrant des fonctionnalités localisées comme des filtres par ville marocaine, support RTL pour l'arabe, et intégration WhatsApp. La plateforme connecte freelancers et clients avec des outils de communication avancés.",
+        "category": "Plateforme Web Full-Stack",
+        "features": [
+          "Interface utilisateur moderne avec Next.js 14",
+          "Backend robuste Node.js avec Express",
+          "Base de données MongoDB pour flexibilité",
+          "Support multilingue (Français, Arabe, Anglais)",
+          "Système d'authentification sécurisé",
+          "Filtres géographiques spécifiques au Maroc",
+          "Intégration WhatsApp pour communication",
+          "Dashboard admin pour gestion de la plateforme"
+        ]
+      },
+      "pharmalive": {
+        "title": "PharmaLive - Gestion de Pharmacie",
+        "description": "Système de gestion complet pour pharmacies développé en Java EE avec interface Bootstrap. Gère l'inventaire, les prescriptions, les ventes et fournit des analyses détaillées pour optimiser les opérations pharmaceutiques.",
+        "category": "Application d'Entreprise",
+        "features": [
+          "Gestion complète de l'inventaire des médicaments",
+          "Suivi des prescriptions et historique patients",
+          "Analyses des ventes et rapports financiers",
+          "Interface utilisateur responsive avec Bootstrap",
+          "Architecture MVC avec Java EE",
+          "Base de données MySQL optimisée",
+          "Contrôle d'accès basé sur les rôles",
+          "Stockage de données chiffré et sécurisé"
+        ]
+      },
+      "callcenter": {
+        "title": "Application Desktop Call Center",
+        "description": "Application de centre d'appels développée avec JavaFX pour une interface utilisateur moderne. Connectée à une base de données MySQL pour la gestion des clients, l'enregistrement des appels et l'analyse des performances.",
+        "category": "Application Desktop",
+        "features": [
+          "Gestion des clients et historique d'interactions",
+          "Enregistrement et suivi des appels",
+          "Analyses de performance et métriques",
+          "Interface moderne JavaFX",
+          "Connectivité base de données Java-MySQL",
+          "Séparation claire des préoccupations avec couche logique métier",
+          "Contrôle d'accès basé sur les rôles",
+          "Fonctionnalités de reporting avancées"
+        ]
+      },
+      "reservation": {
+        "title": "Gestion Des Réservations Swing",
+        "description": "Système de gestion des réservations développé en Java Swing avec programmation orientée objet. Intègre calendrier, confirmations automatiques et gestion complète des réservations.",
+        "category": "Application Desktop",
+        "features": [
+          "Gestion des réservations et calendrier intégré",
+          "Confirmations automatiques par email",
+          "Architecture POO propre avec séparation des responsabilités",
+          "Interface utilisateur Java Swing",
+          "Gestion des conflits de réservation",
+          "Système de notification intégré",
+          "Reporting et analyses des réservations",
+          "Support multi-utilisateurs avec permissions"
+        ]
+      },
+      "network": {
+        "title": "Projet Infrastructure Réseau",
+        "description": "Conception et implémentation complète d'infrastructure réseau utilisant les équipements Cisco. Configuration VLAN, protocoles de routage et optimisation des performances réseau.",
+        "category": "Réseau & Infrastructure",
+        "features": [
+          "Conception complète de réseau et implémentation",
+          "Configuration des protocoles de routage",
+          "Sécurité réseau et optimisation des performances",
+          "Configuration VLAN et segmentation réseau",
+          "Surveillance du réseau et dépannage",
+          "Documentation technique complète",
+          "Tests de performance et validation",
+          "Formation utilisateur et support technique"
+        ]
+      },
+      "cisco": {
+        "title": "Implémentation Cisco ISE NAC",
+        "description": "Déploiement complet du contrôle d'accès réseau Cisco Identity Services Engine. Gestion des identités, application des politiques et surveillance de la conformité.",
+        "category": "Sécurité Réseau",
+        "features": [
+          "Déploiement du contrôle d'accès réseau",
+          "Gestion des identités et application des politiques",
+          "Surveillance de la conformité et reporting",
+          "Configuration Cisco ISE avancée",
+          "Intégration avec l'infrastructure existante",
+          "Politiques de sécurité granulaires",
+          "Surveillance en temps réel des accès",
+          "Documentation et formation sécurité"
+        ]
+      }
+    }
   },
   "contact": {
     "title": "Entrer en Contact",
