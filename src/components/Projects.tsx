@@ -211,7 +211,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {projects.map((project, index) => {
             const IconComponent = project.icon
             return (
@@ -268,7 +268,7 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="p-6 space-y-6">
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                     {project.description}
                   </p>
 
@@ -285,11 +285,11 @@ const Projects = () => {
                             <Server className="w-4 h-4 mr-2" />
                             Backend (Spring Boot)
                           </h5>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 text-sm">
                             {project.backendTech?.map((tech, techIndex) => (
                               <span
                                 key={techIndex}
-                                className="px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 text-sm rounded-lg font-medium border border-blue-200 dark:border-blue-700 hover:bg-blue-200 dark:hover:bg-blue-800/40 transition-all duration-200"
+                                className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 rounded-lg font-medium border border-blue-200 dark:border-blue-700 hover:bg-blue-200 dark:hover:bg-blue-800/40 transition-all duration-200 text-xs sm:text-sm"
                               >
                                 {tech}
                               </span>
@@ -303,11 +303,11 @@ const Projects = () => {
                             <Code className="w-4 h-4 mr-2" />
                             Mobile (Android)
                           </h5>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 text-sm">
                             {project.mobileTech?.map((tech, techIndex) => (
                               <span
                                 key={techIndex}
-                                className="px-3 py-1.5 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 text-sm rounded-lg font-medium border border-green-200 dark:border-green-700 hover:bg-green-200 dark:hover:bg-green-800/40 transition-all duration-200"
+                                className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-lg font-medium border border-green-200 dark:border-green-700 hover:bg-green-200 dark:hover:bg-green-800/40 transition-all duration-200 text-xs sm:text-sm"
                               >
                                 {tech}
                               </span>
@@ -360,7 +360,7 @@ const Projects = () => {
                         {project.technologies.map((tech, techIndex) => (
                           <span
                             key={techIndex}
-                            className="px-4 py-2 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 text-sm rounded-lg font-medium shadow-sm hover:shadow-md hover:from-primary-100 hover:to-primary-200 dark:hover:from-primary-800 dark:hover:to-primary-700 transition-all duration-200 border border-gray-200 dark:border-gray-600"
+                            className="px-3 py-1.5 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 text-xs sm:text-sm rounded-lg font-medium shadow-sm hover:shadow-md transition-all duration-200 border border-gray-200 dark:border-gray-600"
                           >
                             {tech}
                           </span>

@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900/90 dark:bg-gray-950/90 backdrop-blur-sm text-white py-16 w-full">
       <div className="w-full px-6 lg:px-12 xl:px-16">
-        <div className="grid md:grid-cols-3 gap-8 items-center">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
           {/* Brand */}
           <div className="text-center md:text-left">
             <button
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2">
             {socialLinks.map((social, index) => {
               const IconComponent = social.icon
               return (
@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-center md:text-right">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs">
               © {currentYear} Sohaib Laarichi
             </p>
             <div className="flex items-center justify-center md:justify-end mt-2 text-gray-400 text-sm">

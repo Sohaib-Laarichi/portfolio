@@ -55,7 +55,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className={`text-5xl md:text-7xl lg:text-8xl font-bold font-display text-gray-800 dark:text-white mb-6 drop-shadow-lg ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}
+              className={`text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-bold font-display text-gray-800 dark:text-white mb-6 drop-shadow-lg ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}
             >
               {isRTL ? t('hero.name') : 'LAARICHI'}
               <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
@@ -69,14 +69,14 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="mb-8"
             >
-              <h2 className={`text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-8 min-h-[3rem] ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}>
+              <h2 className={`text-lg sm:text-xl md:text-2xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-6 min-h-[3rem] ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}>
                 <Typewriter 
                   words={t('hero.titles', { returnObjects: true }) as string[]}
                   className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent font-bold"
                 />
               </h2>
               
-              <p className={`text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto lg:mx-0 leading-relaxed font-medium ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}>
+              <p className={`text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto lg:mx-0 leading-relaxed font-medium ${isRTL ? 'text-right lg:text-right' : 'text-center lg:text-left'}`}>
                 {t('hero.description')}
               </p>
             </motion.div>
@@ -89,13 +89,13 @@ const Hero = () => {
             >
               <button
                 onClick={() => scrollToSection('#projects')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
               >
                 {t('hero.viewProjects')}
               </button>
               <button
                 onClick={() => scrollToSection('#contact')}
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-4 sm:px-6 py-2 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base"
               >
                 {t('hero.contactMe')}
               </button>
@@ -171,7 +171,7 @@ const Hero = () => {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="w-96 h-96 lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 shadow-2xl overflow-hidden border-4 border-white/20">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 shadow-2xl overflow-hidden border-4 border-white/20">
                 <Image
                   src="/images/me.png"
                   alt="Sohaib Laarichi - Professional Photo"

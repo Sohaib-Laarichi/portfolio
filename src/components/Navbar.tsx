@@ -99,19 +99,26 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+          {/* Mobile Navigation - fullscreen overlay for better touch targets */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 rounded-lg mt-2 shadow-lg border dark:border-gray-700">
-              {navItems.map((item) => (
-                <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  {item.name}
-                </button>
-              ))}
+            <div className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm p-6">
+              <div className="w-full max-w-sm space-y-3">
+                {navItems.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 block px-4 py-4 text-lg font-medium w-full text-left transition-colors duration-200 rounded-lg bg-white/30 dark:bg-gray-800/30"
+                  >
+                    {item.name}
+                  </button>
+                ))}
+
+                <div className="flex items-center justify-between mt-4">
+                  <LanguageSwitcher />
+                  <ThemeToggle />
+                </div>
+              </div>
             </div>
           </div>
         )}

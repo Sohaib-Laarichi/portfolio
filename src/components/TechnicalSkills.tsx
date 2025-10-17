@@ -82,7 +82,7 @@ const TechnicalSkills = () => {
         </motion.div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {getSkillCategories().map((category, categoryIndex) => {
             const IconComponent = category.icon
             return (
@@ -92,13 +92,13 @@ const TechnicalSkills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 dark:border-gray-700"
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-4 sm:p-6 border border-gray-100 dark:border-gray-700"
               >
                 <div className="flex items-center mb-6">
-                  <div className={`${category.color} p-3 rounded-lg mr-4`}>
-                    <IconComponent className="w-6 h-6 text-white" />
+                  <div className={`${category.color} p-2 sm:p-3 rounded-lg mr-4 flex-shrink-0`}>
+                    <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 dark:text-white font-display">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-white font-display">
                     {category.title}
                   </h3>
                 </div>
@@ -114,10 +114,10 @@ const TechnicalSkills = () => {
                         delay: categoryIndex * 0.1 + skillIndex * 0.05 
                       }}
                       viewport={{ once: true }}
-                      className="flex items-center"
+                      className="flex items-center flex-wrap"
                     >
-                      <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                      <div className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0 mt-1"></div>
+                      <span className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-sm sm:text-base">
                         {skill}
                       </span>
                     </motion.div>
