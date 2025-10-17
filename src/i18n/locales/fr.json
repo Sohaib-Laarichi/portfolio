@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "experience": "Expérience", 
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "SOHAIB LAARICHI",
+    "titles": [
+      "Spécialiste Sécurité Réseau",
+      "Développeur Full-Stack",
+      "Administrateur Systèmes",
+      "Ingénieur DevOps", 
+      "Expert Infrastructure Cloud"
+    ],
+    "description": "Étudiant passionné en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Je recherche activement une entreprise innovante pour appliquer et développer mon expertise dans la conception et le déploiement de solutions réseau robustes.",
+    "viewProjects": "Voir Mes Projets",
+    "contactMe": "Me Contacter",
+    "scrollDown": "Faire Défiler"
+  },
+  "about": {
+    "title": "À Propos de Moi", 
+    "subtitle": "Apprenez à me connaître",
+    "profile": {
+      "title": "Profil Professionnel",
+      "description": "Actuellement en cours d'études d'ingénieur informatique à l'EMSI, je suis passionné par l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques innovantes tout en développant continuellement mon expertise en sécurité réseau et administration système."
+    },
+    "education": {
+      "title": "Formation & Éducation",
+      "degree": "Étudiant en Génie Informatique",
+      "school": "EMSI - École Marocaine des Sciences de l'Ingénieur",
+      "period": "2023 - Présent",
+      "certifications": "Certifications Professionnelles"
+    },
+    "softSkills": {
+      "title": "Compétences Humaines",
+      "skills": [
+        "Leadership & Collaboration d'Équipe",
+        "Résolution Analytique de Problèmes",
+        "Pensée Critique Stratégique", 
+        "Gestion de Projet Agile",
+        "Communication Technique",
+        "Apprentissage Continu & Adaptabilité"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Technologies et outils que j'utilise",
+    "categories": {
+      "networking": "Réseau & Sécurité",
+      "programming": "Langages de Programmation", 
+      "databases": "Bases de Données & Cloud",
+      "tools": "Outils de Développement"
+    },
+    "viewCertificate": "Voir Certificat"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours technologique",
+    "jobs": [
+      {
+        "title": "Stagiaire Administrateur Réseau",
+        "company": "TechCorp Solutions", 
+        "period": "Juin 2024 - Août 2024",
+        "description": "Configuration et maintenance de l'infrastructure réseau, mise en œuvre de protocoles de sécurité, et support technique pour les systèmes d'entreprise."
+      },
+      {
+        "title": "Spécialiste Support IT",
+        "company": "Digital Services Inc.",
+        "period": "Janvier 2024 - Mai 2024",
+        "description": "Support technique complet, résolution de problèmes matériels et logiciels, assistance dans les déploiements système."
+      },
+      {
+        "title": "Développeur Junior",
+        "company": "WebDev Agency", 
+        "period": "Septembre 2023 - Décembre 2023",
+        "description": "Développement d'applications web avec des frameworks modernes, collaboration avec les équipes design, maintenance des référentiels de code."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Quelques-uns de mes travaux récents",
+    "viewProject": "Voir Projet",
+    "viewCode": "Voir Code"
+  },
+  "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Travaillons ensemble", 
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Votre Message",
+      "send": "Envoyer Message",
+      "sending": "Envoi en cours..."
+    },
+    "info": {
+      "title": "Informations de Contact",
+      "email": "Email",
+      "phone": "Téléphone", 
+      "location": "Localisation",
+      "social": "Suivez-moi"
+    }
+  },
+  "footer": {
+    "brand": "SOHAIB LAARICHI",
+    "quickLinks": "Liens Rapides",
+    "connect": "Connectez-vous avec Moi",
+    "rights": "Tous droits réservés.",
+    "backToTop": "Retour en Haut"
+  },
+  "stats": {
+    "projects": "Projets Complétés",
+    "certifications": "Certifications",
+    "experience": "Années d'Expérience"
+  }
+}

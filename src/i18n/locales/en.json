@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills", 
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I am",
+    "name": "SOHAIB LAARICHI",
+    "titles": [
+      "Network Security Specialist",
+      "Full-Stack Developer",
+      "Systems Administrator", 
+      "DevOps Engineer",
+      "Cloud Infrastructure Expert"
+    ],
+    "description": "A passionate Computer Engineering student at EMSI specializing in network architecture, security, and systems administration. Actively seeking an innovative company to apply and grow my expertise in designing and deploying robust network solutions.",
+    "viewProjects": "View My Projects",
+    "contactMe": "Contact Me",
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "profile": {
+      "title": "Professional Profile",
+      "description": "Currently pursuing my Computer Engineering degree at EMSI, I am passionate about network infrastructure and cybersecurity. My goal is to contribute to innovative technological solutions while continuously expanding my expertise in network security and systems administration."
+    },
+    "education": {
+      "title": "Education & Training",
+      "degree": "Computer Engineering Student",
+      "school": "EMSI - École Marocaine des Sciences de l'Ingénieur",
+      "period": "2023 - Present",
+      "certifications": "Professional Certifications"
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "skills": [
+        "Team Leadership & Collaboration",
+        "Analytical Problem Solving", 
+        "Strategic Critical Thinking",
+        "Agile Project Management",
+        "Technical Communication",
+        "Continuous Learning & Adaptability"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I work with",
+    "categories": {
+      "networking": "Networking & Security",
+      "programming": "Programming Languages",
+      "databases": "Databases & Cloud",
+      "tools": "Development Tools"
+    },
+    "viewCertificate": "View Certificate"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My journey in technology",
+    "jobs": [
+      {
+        "title": "Network Administrator Intern",
+        "company": "TechCorp Solutions",
+        "period": "June 2024 - August 2024",
+        "description": "Configured and maintained network infrastructure, implemented security protocols, and provided technical support for enterprise systems."
+      },
+      {
+        "title": "IT Support Specialist", 
+        "company": "Digital Services Inc.",
+        "period": "January 2024 - May 2024",
+        "description": "Provided comprehensive technical support, troubleshooted hardware and software issues, and assisted in system deployments."
+      },
+      {
+        "title": "Junior Developer",
+        "company": "WebDev Agency",
+        "period": "September 2023 - December 2023", 
+        "description": "Developed web applications using modern frameworks, collaborated with design teams, and maintained code repositories."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject", 
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "social": "Follow Me"
+    }
+  },
+  "footer": {
+    "brand": "SOHAIB LAARICHI",
+    "quickLinks": "Quick Links",
+    "connect": "Connect With Me", 
+    "rights": "All rights reserved.",
+    "backToTop": "Back to Top"
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "certifications": "Certifications",
+    "experience": "Years Experience"
+  }
+}
