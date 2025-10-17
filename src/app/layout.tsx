@@ -19,41 +19,88 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Sohaib Laarichi - Network & Software Engineer | Portfolio Professionnel',
-  description: 'Portfolio professionnel de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack. Spécialiste en sécurité réseau, architecture système et développement web moderne. Expert Java, Spring Boot, Next.js.',
+  title: 'Sohaib Laarichi - Ingénieur Réseau & Développeur Maroc | Portfolio Professionnel',
+  description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant EMSI Marrakech, spécialiste sécurité réseau Cisco, développement Java Spring Boot, Next.js. Services informatiques professionnels au Maroc.',
   keywords: [
+    // Nom et variations principales
     'Sohaib Laarichi',
+    'Sohaib Laarichi Maroc',
+    'Sohaib Laarichi Morocco',
     'Sohaib',
     'Laarichi', 
     'SohaibLaarichi',
-    'Network Engineer',
-    'Software Engineer',
-    'Ingénieur Réseau',
-    'Développeur Full Stack',
-    'Computer Engineering',
-    'Network Security',
-    'Cisco',
-    'Java Developer',
-    'Spring Boot',
-    'Next.js',
-    'React',
-    'TypeScript',
-    'Systems Administration',
-    'Network Architecture',
-    'Cybersecurity',
-    'Web Development',
-    'Mobile Development',
-    'Android',
-    'Kotlin',
-    'MySQL',
-    'MongoDB',
+    'صهيب لعريشي',
+    'صهيب لعريشي المغرب',
+    
+    // Professions avec géolocalisation
+    'Ingénieur Réseau Maroc',
+    'Network Engineer Morocco',
+    'Développeur Full Stack Maroc',
+    'Software Engineer Morocco',
+    'Informaticien Maroc',
+    'IT Specialist Morocco',
+    
+    // Villes marocaines
+    'Ingénieur Réseau Marrakech',
+    'Développeur Casablanca',
+    'IT Rabat',
+    'Network Engineer Marrakech',
+    'Software Developer Casablanca',
+    'Freelancer Morocco',
+    'Freelance Maroc',
+    
+    // Éducation et institutions
+    'EMSI Marrakech',
+    'EMSI Morocco',
+    'École Marocaine Sciences Ingénieur',
+    'UPM Marrakech',
+    'Université Privée Marrakech',
+    'Étudiant Ingénieur Maroc',
+    'Computer Engineering Morocco',
+    
+    // Technologies avec localisation
+    'Cisco Morocco',
+    'Java Developer Morocco',
+    'Spring Boot Maroc',
+    'Next.js Developer Morocco',
+    'React Developer Maroc',
+    'Android Developer Morocco',
+    'TypeScript Morocco',
+    
+    // Services et spécialisations
+    'Sécurité Réseau Maroc',
+    'Network Security Morocco',
+    'Administration Système Maroc',
+    'Systems Administrator Morocco',
+    'Cybersécurité Maroc',
+    'Cybersecurity Morocco',
+    'Infrastructure Réseau Maroc',
+    'Network Infrastructure Morocco',
+    
+    // Développement web et mobile
+    'Développement Web Maroc',
+    'Web Development Morocco',
+    'Développement Mobile Maroc',
+    'Mobile App Development Morocco',
+    'Site Web Maroc',
+    'Website Morocco',
+    
+    // Secteur freelance et services
+    'Freelance IT Maroc',
+    'Consultant Informatique Maroc',
+    'Services Informatiques Maroc',
+    'IT Services Morocco',
+    'Développeur Indépendant Maroc',
+    'Independent Developer Morocco',
+    
+    // Termes généraux
     'Portfolio',
-    'Morocco',
-    'Maroc',
-    'EMSI',
-    'Freelance Developer',
-    'Backend Developer',
-    'Frontend Developer'
+    'CV Informatique',
+    'Projets IT',
+    'Morocco Tech',
+    'Maroc Technologie',
+    'Digital Morocco',
+    'Numérique Maroc'
   ].join(', '),
   authors: [{ 
     name: 'Sohaib Laarichi',
@@ -73,19 +120,20 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Sohaib Laarichi - Network & Software Engineer Portfolio',
-    description: 'Portfolio professionnel de Sohaib Laarichi, spécialiste en ingénierie réseau et développement logiciel. Découvrez mes projets et compétences techniques.',
-    url: 'https://sohaib-laarichi.vercel.app',
-    siteName: 'Sohaib Laarichi Portfolio',
+    title: 'Sohaib Laarichi - Ingénieur Réseau & Développeur Maroc | Portfolio',
+    description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant EMSI Marrakech, expert Cisco, Java, Spring Boot. Services IT professionnels Morocco.',
+    url: 'https://sohaib-laarichi.netlify.app',
+    siteName: 'Sohaib Laarichi Portfolio Morocco',
     type: 'website',
-    locale: 'fr_FR',
-    alternateLocale: ['en_US', 'ar_SA'],
+    locale: 'fr_MA',
+    alternateLocale: ['en_US', 'ar_MA', 'fr_FR'],
+    countryName: 'Morocco',
     images: [
       {
         url: '/images/me.png',
         width: 1200,
         height: 630,
-        alt: 'Sohaib Laarichi - Network & Software Engineer',
+        alt: 'Sohaib Laarichi - Ingénieur Réseau Maroc, Développeur Full-Stack Morocco',
       },
     ],
   },
@@ -100,11 +148,11 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://sohaib-laarichi.vercel.app',
+    canonical: 'https://sohaib-laarichi.netlify.app',
     languages: {
-      'fr-FR': 'https://sohaib-laarichi.vercel.app/fr',
-      'en-US': 'https://sohaib-laarichi.vercel.app/en',
-      'ar-SA': 'https://sohaib-laarichi.vercel.app/ar',
+      'fr-FR': 'https://sohaib-laarichi.netlify.app/fr',
+      'en-US': 'https://sohaib-laarichi.netlify.app/en',
+      'ar-SA': 'https://sohaib-laarichi.netlify.app/ar',
     },
   },
   icons: {

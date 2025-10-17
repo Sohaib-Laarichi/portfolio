@@ -20,10 +20,15 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen w-full flex items-center justify-center bg-transparent relative">
-      {/* SEO Keywords cachés */}
+      {/* SEO Keywords cachés pour référencement Maroc */}
       <div className="sr-only">
-        <h1>Sohaib Laarichi - Portfolio Professionnel</h1>
-        <p>Sohaib, Laarichi, SohaibLaarichi, Sohaib Laarichi, Ingénieur Réseau, Network Engineer, Software Engineer, Développeur Full Stack, Morocco, Maroc, EMSI, Java, Spring Boot, Next.js, React, TypeScript, Cisco, Android, Kotlin, Portfolio, Freelance, Web Developer, Mobile Developer, Backend Developer, Frontend Developer</p>
+        <h1>Sohaib Laarichi - Ingénieur Réseau et Développeur Full-Stack Maroc</h1>
+        <p>Sohaib Laarichi, Ingénieur Réseau Maroc, Network Engineer Morocco, Développeur Full Stack Marrakech, Software Engineer Casablanca, Informaticien Rabat, IT Specialist Morocco, EMSI Marrakech, Étudiant Ingénieur Maroc, Computer Engineering Morocco, Cisco Maroc, Java Developer Morocco, Spring Boot Maroc, Next.js Developer Morocco, React Developer Maroc, TypeScript Morocco, Android Developer Morocco, Kotlin Maroc, Freelance IT Maroc, Services Informatiques Morocco, Consultant Informatique Maroc, Développeur Web Maroc, Mobile App Developer Morocco, Backend Developer Maroc, Frontend Developer Morocco, Sécurité Réseau Maroc, Network Security Morocco, Administration Système Maroc, Systems Administrator Morocco, Infrastructure Réseau Maroc, Portfolio Maroc, CV Informatique Morocco, Projets IT Maroc, Morocco Tech, Maroc Technologie, صهيب لعريشي, صهيب لعريشي المغرب, مهندس شبكات المغرب, مطور تطبيقات المغرب</p>
+        <address>
+          Sohaib Laarichi, Ingénieur Réseau, Marrakech, Maroc, Morocco
+          EMSI - École Marocaine des Sciences de l'Ingénieur
+          Services IT professionnels au Maroc
+        </address>
       </div>
       
       <div className="w-full px-6 lg:px-12 xl:px-16 py-20">

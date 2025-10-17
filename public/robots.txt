@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://sohaib-laarichi.vercel.app/sitemap.xml
+Sitemap: https://sohaib-laarichi.netlify.app/sitemap.xml
 
 # Crawl-delay pour éviter la surcharge
 Crawl-delay: 1
@@ -16,8 +16,19 @@ Allow: /images/
 Allow: /favicon.ico
 Allow: /favicon.svg
 
-# Mots-clés pour les moteurs de recherche
-# Sohaib Laarichi - Network & Software Engineer
-# Portfolio professionnel - Ingénieur Réseau et Développeur Full-Stack
-# Spécialiste Cisco, Java, Spring Boot, Next.js, React, TypeScript
-# Développement web et mobile, sécurité réseau, architecture système
+# Mots-clés géolocalisés pour les moteurs de recherche Maroc
+# Sohaib Laarichi - Ingénieur Réseau & Développeur Full-Stack Maroc
+# Portfolio professionnel Morocco - EMSI Marrakech
+# Network Engineer Morocco - Software Engineer Maroc
+# Développeur Web Marrakech - Mobile Developer Casablanca
+# IT Services Morocco - Freelance Developer Maroc
+# Cisco Morocco - Java Developer Maroc - Spring Boot Morocco
+# Next.js Developer Maroc - React Developer Morocco
+# TypeScript Morocco - Android Developer Maroc
+# Sécurité Réseau Morocco - Administration Système Maroc
+# Infrastructure Réseau Morocco - DevOps Engineer Maroc
+# Full Stack Developer Morocco - Backend Developer Maroc
+# Frontend Developer Morocco - Consultant IT Maroc
+# Services Informatiques Morocco - Développement Web Maroc
+# Applications Mobile Morocco - Sites Web Maroc
+# صهيب لعريشي - مهندس شبكات المغرب - مطور تطبيقات المغرب

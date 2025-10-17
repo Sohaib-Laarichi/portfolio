@@ -436,7 +436,7 @@ Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus
 - 📧 **Email** : [sohaiblaarichi112@gmail.com](mailto:sohaiblaarichi112@gmail.com)
 - 💼 **LinkedIn** : [Sohaib Laarichi](https://linkedin.com/in/sohaib-laarichi)
 - 🐙 **GitHub** : [Sohaib-Laarichi](https://github.com/Sohaib-Laarichi)
-- 🌐 **Portfolio** : [https://sohaib-laarichi.vercel.app](https://sohaib-laarichi.vercel.app)
+- 🌐 **Portfolio** : [https://sohaib-laarichi.netlify.app](https://sohaib-laarichi.netlify.app)
 
 ---
 

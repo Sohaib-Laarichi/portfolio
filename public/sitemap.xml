@@ -6,34 +6,35 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   
-  <!-- Page principale -->
+  <!-- Page principale - Sohaib Laarichi Maroc -->
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/</loc>
+    <loc>https://sohaib-laarichi.netlify.app/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://sohaib-laarichi.vercel.app/fr" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://sohaib-laarichi.vercel.app/en" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://sohaib-laarichi.vercel.app/ar" />
+    <xhtml:link rel="alternate" hreflang="fr-MA" href="https://sohaib-laarichi.netlify.app/fr" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://sohaib-laarichi.netlify.app/en" />
+    <xhtml:link rel="alternate" hreflang="ar-MA" href="https://sohaib-laarichi.netlify.app/ar" />
+    <xhtml:link rel="geo" href="geo:31.6295,-7.9811" />
   </url>
 
   <!-- Pages linguistiques -->
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/fr</loc>
+    <loc>https://sohaib-laarichi.netlify.app/fr</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/en</loc>
+    <loc>https://sohaib-laarichi.netlify.app/en</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/ar</loc>
+    <loc>https://sohaib-laarichi.netlify.app/ar</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -41,35 +42,35 @@
 
   <!-- Pages sections -->
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/#about</loc>
+    <loc>https://sohaib-laarichi.netlify.app/#about</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/#skills</loc>
+    <loc>https://sohaib-laarichi.netlify.app/#skills</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/#experience</loc>
+    <loc>https://sohaib-laarichi.netlify.app/#experience</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/#projects</loc>
+    <loc>https://sohaib-laarichi.netlify.app/#projects</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sohaib-laarichi.vercel.app/#contact</loc>
+    <loc>https://sohaib-laarichi.netlify.app/#contact</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

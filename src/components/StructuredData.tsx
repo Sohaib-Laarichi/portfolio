@@ -5,18 +5,31 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Sohaib Laarichi",
-    "alternateName": ["Sohaib", "Laarichi", "SohaibLaarichi"],
+    "alternateName": [
+      "Sohaib", 
+      "Laarichi", 
+      "SohaibLaarichi",
+      "صهيب لعريشي",
+      "Sohaib Laarichi Maroc",
+      "Sohaib Laarichi Morocco",
+      "Ingénieur Réseau Maroc",
+      "Network Engineer Morocco"
+    ],
     "jobTitle": "Network & Software Engineer",
-    "description": "Ingénieur Réseau et Développeur Full-Stack spécialisé en sécurité réseau, architecture système et développement web moderne.",
-    "url": "https://sohaib-laarichi.vercel.app",
-    "image": "https://sohaib-laarichi.vercel.app/images/me.png",
+    "description": "Ingénieur Réseau et Développeur Full-Stack au Maroc, spécialisé en sécurité réseau Cisco, développement Java Spring Boot et architecture système. Étudiant EMSI Marrakech offrant services IT professionnels.",
+    "url": "https://sohaib-laarichi.netlify.app",
+    "image": "https://sohaib-laarichi.netlify.app/images/me.png",
     "email": "sohaiblaarichi112@gmail.com",
     "telephone": "+212 6 XX XX XX XX",
     "nationality": "Moroccan",
+    "birthPlace": "Morocco",
+    "homeLocation": "Morocco",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "Morocco",
-      "addressLocality": "Casablanca"
+      "addressCountry": "MA",
+      "addressRegion": "Marrakech-Safi",
+      "addressLocality": "Marrakech",
+      "streetAddress": "Marrakech, Maroc"
     },
     "worksFor": {
       "@type": "Organization",
@@ -26,12 +39,27 @@ export default function StructuredData() {
       {
         "@type": "EducationalOrganization",
         "name": "École Marocaine des Sciences de l'Ingénieur (EMSI)",
-        "description": "Computer Engineering - Network & Systems"
+        "alternateName": ["EMSI Marrakech", "EMSI Morocco", "EMSI Maroc"],
+        "description": "Génie Informatique - Réseaux & Systèmes, Computer Engineering - Network & Systems",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "MA",
+          "addressLocality": "Marrakech",
+          "addressRegion": "Marrakech-Safi"
+        },
+        "url": "https://www.emsi.ma"
       },
       {
         "@type": "EducationalOrganization", 
         "name": "Université Privée de Marrakech (UPM)",
-        "description": "Computer Engineering - Network & Systems"
+        "alternateName": ["UPM Marrakech", "UPM Morocco", "UPM Maroc"],
+        "description": "Génie Informatique - Réseaux & Systèmes, Computer Engineering - Network & Systems",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "MA",
+          "addressLocality": "Marrakech", 
+          "addressRegion": "Marrakech-Safi"
+        }
       }
     ],
     "knowsAbout": [
@@ -82,11 +110,11 @@ export default function StructuredData() {
     "sameAs": [
       "https://github.com/Sohaib-Laarichi",
       "https://linkedin.com/in/sohaib-laarichi",
-      "https://sohaib-laarichi.vercel.app"
+      "https://sohaib-laarichi.netlify.app"
     ],
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://sohaib-laarichi.vercel.app"
+      "@id": "https://sohaib-laarichi.netlify.app"
     }
   };
 
@@ -95,7 +123,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "Sohaib Laarichi Portfolio",
     "alternateName": ["Portfolio Sohaib Laarichi", "Sohaib Portfolio", "Laarichi Portfolio"],
-    "url": "https://sohaib-laarichi.vercel.app",
+    "url": "https://sohaib-laarichi.netlify.app",
     "description": "Portfolio professionnel de Sohaib Laarichi, ingénieur réseau et développeur full-stack",
     "author": {
       "@type": "Person",
@@ -106,7 +134,7 @@ export default function StructuredData() {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://sohaib-laarichi.vercel.app/?q={search_term_string}"
+        "urlTemplate": "https://sohaib-laarichi.netlify.app/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -140,7 +168,7 @@ export default function StructuredData() {
       "Systems Administration"
     ],
     "areaServed": "Morocco",
-    "url": "https://sohaib-laarichi.vercel.app"
+    "url": "https://sohaib-laarichi.netlify.app"
   };
 
   return (
