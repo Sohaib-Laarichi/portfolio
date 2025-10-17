@@ -26,6 +26,7 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 ## ✨ Fonctionnalités
 
 ### 🎯 Portfolio Complet
+
 - **7 projets détaillés** avec technologies spécialisées
 - **Sections organisées** : Hero, About, Skills, Experience, Projects, Contact
 - **Design responsive** optimisé mobile/tablet/desktop
@@ -33,6 +34,7 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 - **Mode sombre/clair** avec transition automatique
 
 ### 🍪 Système de Tracking Ultra-Avancé
+
 - **50+ points de données** capturés par visiteur
 - **Tous les cookies** analysés individuellement
 - **Permissions navigateur** (caméra, micro, géolocalisation)
@@ -42,6 +44,7 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 - **Stockage navigateur** (LocalStorage, SessionStorage)
 
 ### 👤 Interface Admin Sécurisée
+
 - **Page cachée** avec authentification par code secret
 - **Visualisation complète** des messages reçus
 - **Gestion des statuts** (nouveau → lu → répondu)

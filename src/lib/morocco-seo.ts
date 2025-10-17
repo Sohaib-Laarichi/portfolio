@@ -117,8 +117,8 @@ export const moroccoSEOData = {
 }
 
 // Fonction pour générer des mots-clés localisés
-export const generateLocalSEOKeywords = (baseName: string) => {
-  const keywords = []
+export const generateLocalSEOKeywords = (baseName: string): string[] => {
+  const keywords: string[] = []
   
   // Ajouter le nom avec chaque ville
   moroccoSEOData.cities.forEach(city => {

@@ -59,34 +59,114 @@
     "title": "Technical Skills",
     "subtitle": "Technologies and tools I work with",
     "categories": {
-      "networking": "Networking & Security",
+      "networking": "Network & Security",
       "programming": "Programming Languages",
       "databases": "Databases & Cloud",
       "tools": "Development Tools"
     },
-    "viewCertificate": "View Certificate"
+    "viewCertificate": "View Certificate",
+    "networking": [
+      "Router & Switch Configuration",
+      "Server Deployment (Windows Server, Linux)",
+      "LAN Management",
+      "Network Security & Monitoring",
+      "Troubleshooting",
+      "Virtualization",
+      "Cisco ISE"
+    ],
+    "programming": [
+      "Java",
+      "JavaScript",
+      "Node.js",
+      "HTML/CSS",
+      "TypeScript",
+      "Python",
+      "PowerShell"
+    ],
+    "databases": [
+      "MySQL",
+      "MongoDB",
+      "Microsoft SQL Server",
+      "Oracle Database",
+      "PostgreSQL",
+      "Azure Cloud",
+      "AWS"
+    ],
+    "tools": [
+      "JEE (Java Enterprise Edition)",
+      "Express.js",
+      "Next.js",
+      "React",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Git"
+    ]
   },
   "experience": {
     "title": "Professional Experience",
     "subtitle": "My journey in technology",
+    "downloadCV": "Download CV",
+    "years": "years",
     "jobs": [
       {
         "title": "Network Administrator Intern",
         "company": "TechCorp Solutions",
+        "location": "Marrakech, Morocco",
         "period": "June 2024 - August 2024",
-        "description": "Configured and maintained network infrastructure, implemented security protocols, and provided technical support for enterprise systems."
+        "type": "Internship",
+        "description": "Configured and maintained network infrastructure, implemented security protocols, and provided technical support for enterprise systems.",
+        "achievements": [
+          "Configured enterprise-level network infrastructure serving 200+ users",
+          "Implemented security protocols reducing network vulnerabilities by 40%",
+          "Provided technical support with 95% first-call resolution rate",
+          "Automated network monitoring processes saving 10 hours weekly",
+          "Collaborated with cross-functional teams on system upgrades"
+        ]
       },
       {
         "title": "IT Support Specialist", 
         "company": "Digital Services Inc.",
+        "location": "Casablanca, Morocco",
         "period": "January 2024 - May 2024",
-        "description": "Provided comprehensive technical support, troubleshooted hardware and software issues, and assisted in system deployments."
+        "type": "Part-time",
+        "description": "Provided comprehensive technical support, troubleshooted hardware and software issues, and assisted in system deployments.",
+        "achievements": [
+          "Provided technical support to 150+ users across multiple departments",
+          "Troubleshooted hardware and software issues with 90% success rate",
+          "Assisted in system deployments and migrations",
+          "Reduced average ticket resolution time by 30%",
+          "Created technical documentation for common issues"
+        ]
       },
       {
         "title": "Junior Developer",
         "company": "WebDev Agency",
-        "period": "September 2023 - December 2023", 
-        "description": "Developed web applications using modern frameworks, collaborated with design teams, and maintained code repositories."
+        "location": "Remote",
+        "period": "September 2023 - December 2023",
+        "type": "Freelance", 
+        "description": "Developed web applications using modern frameworks, collaborated with design teams, and maintained code repositories.",
+        "achievements": [
+          "Developed 5+ responsive web applications using React and Next.js",
+          "Collaborated with design teams to implement pixel-perfect UIs",
+          "Maintained code repositories with Git best practices",
+          "Improved application performance by 25% through optimization",
+          "Delivered projects on time with 100% client satisfaction"
+        ]
+      },
+      {
+        "title": "Network Technician",
+        "company": "ConnectNet Services",
+        "location": "Marrakech, Morocco",
+        "period": "June 2023 - August 2023",
+        "type": "Summer Internship",
+        "description": "Installed and maintained network equipment, performed troubleshooting, and supported network operations.",
+        "achievements": [
+          "Installed network equipment for 50+ client locations",
+          "Performed network troubleshooting with 95% resolution rate",
+          "Supported daily network operations and maintenance",
+          "Reduced equipment downtime by 20% through proactive monitoring",
+          "Trained in fiber optic installation and testing"
+        ]
       }
     ]
   },
@@ -207,28 +287,116 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's work together",
+    "description": "Ready to bring your ideas to life? I'm here to help with your network infrastructure and software development projects.",
+    "cta": "Let's discuss your project",
     "form": {
       "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
       "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
       "subject": "Subject", 
+      "subjectPlaceholder": "What's this about?",
       "message": "Your Message",
+      "messagePlaceholder": "Tell me about your project or how I can help you...",
       "send": "Send Message",
-      "sending": "Sending..."
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again.",
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address"
     },
     "info": {
       "title": "Contact Information",
+      "subtitle": "Reach out through any of these channels",
       "email": "Email",
       "phone": "Phone",
       "location": "Location",
-      "social": "Follow Me"
+      "social": "Follow Me",
+      "availability": "Available for freelance work",
+      "response": "I typically respond within 24 hours"
     }
   },
   "footer": {
+    "tagline": "Building the future of technology, one project at a time.",
+    "description": "Network & Software Engineer passionate about creating innovative solutions and robust infrastructures.",
     "brand": "SOHAIB LAARICHI",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "social": {
+      "title": "Social Media",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "email": "sohaib.laarichi@example.com",
+      "phone": "+212 6 12 34 56 78",
+      "location": "Marrakech, Morocco"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
     "quickLinks": "Quick Links",
     "connect": "Connect With Me", 
     "rights": "All rights reserved.",
+    "copyright": "© 2024 Sohaib Laarichi. All rights reserved.",
+    "madeWith": "Made with ❤️ in Morocco",
     "backToTop": "Back to Top"
+  },
+  "mobile": {
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu",
+      "toggle": "Toggle menu"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "back": "Back",
+      "home": "Home"
+    },
+    "actions": {
+      "scrollUp": "Scroll to top",
+      "share": "Share",
+      "download": "Download",
+      "expand": "Expand",
+      "collapse": "Collapse"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "more": "More",
+    "less": "Less",
+    "readMore": "Read more",
+    "readLess": "Read less",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "comingSoon": "Coming soon",
+    "notFound": "Not found",
+    "backToHome": "Back to home"
   },
   "stats": {
     "projects": "Projects Completed",

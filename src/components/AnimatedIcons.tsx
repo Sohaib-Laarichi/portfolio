@@ -21,7 +21,7 @@ const AnimatedIcons = () => {
         <motion.div
           key={index}
           className="absolute"
-          style={{ left: x, top: y }}
+          style={{ left: `${x}%`, top: `${y}%` } as React.CSSProperties}
           initial={{ opacity: 0, scale: 0, rotate: 0 }}
           animate={{ 
             opacity: [0, 0.1, 0.2, 0.1, 0],

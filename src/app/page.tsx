@@ -9,6 +9,8 @@ import Footer from '@/components/Footer'
 import FloatingParticles from '@/components/FloatingParticles'
 import AnimatedIcons from '@/components/AnimatedIcons'
 import CustomCursor from '@/components/CustomCursor'
+import ScrollToTop from '@/components/ScrollToTop'
+import ScrollProgressBar from '@/components/ScrollProgressBar'
 
 export default function Home() {
   return (
@@ -28,6 +30,9 @@ export default function Home() {
       
       {/* Content - Full Width */}
       <div className="relative z-10 w-full">
+        {/* Scroll Progress Bar */}
+        <ScrollProgressBar />
+        
         <Navbar />
         
         {/* Full viewport sections */}
@@ -58,6 +63,9 @@ export default function Home() {
         <div className="w-full">
           <Footer />
         </div>
+        
+        {/* Scroll to Top Button */}
+        <ScrollToTop />
       </div>
     </main>
   )

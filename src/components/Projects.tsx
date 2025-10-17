@@ -202,16 +202,16 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-6">
-            Featured Projects
+          <h2 className={`text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-6 ${isRTL ? 'text-right' : 'text-center'}`}>
+            {t('projects.title')}
           </h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A showcase of my technical projects spanning web development, network infrastructure, and security implementations
+          <p className={`text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto ${isRTL ? 'text-right' : 'text-center'}`}>
+            {t('projects.subtitle')}
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => {
             const IconComponent = project.icon
             return (

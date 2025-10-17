@@ -26,7 +26,7 @@ const Hero = () => {
         <p>Sohaib Laarichi, Ingénieur Réseau Maroc, Network Engineer Morocco, Développeur Full Stack Marrakech, Software Engineer Casablanca, Informaticien Rabat, IT Specialist Morocco, EMSI Marrakech, Étudiant Ingénieur Maroc, Computer Engineering Morocco, Cisco Maroc, Java Developer Morocco, Spring Boot Maroc, Next.js Developer Morocco, React Developer Maroc, TypeScript Morocco, Android Developer Morocco, Kotlin Maroc, Freelance IT Maroc, Services Informatiques Morocco, Consultant Informatique Maroc, Développeur Web Maroc, Mobile App Developer Morocco, Backend Developer Maroc, Frontend Developer Morocco, Sécurité Réseau Maroc, Network Security Morocco, Administration Système Maroc, Systems Administrator Morocco, Infrastructure Réseau Maroc, Portfolio Maroc, CV Informatique Morocco, Projets IT Maroc, Morocco Tech, Maroc Technologie, صهيب لعريشي, صهيب لعريشي المغرب, مهندس شبكات المغرب, مطور تطبيقات المغرب</p>
         <address>
           Sohaib Laarichi, Ingénieur Réseau, Marrakech, Maroc, Morocco
-          EMSI - École Marocaine des Sciences de l'Ingénieur
+          EMSI - École Marocaine des Sciences de l&apos;Ingénieur
           Services IT professionnels au Maroc
         </address>
       </div>

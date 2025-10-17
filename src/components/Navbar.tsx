@@ -88,6 +88,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none"
+              aria-label={isMobileMenuOpen ? t('mobile.menu.close') : t('mobile.menu.open')}
             >
               {isMobileMenuOpen ? (
                 <X className="block h-6 w-6" />

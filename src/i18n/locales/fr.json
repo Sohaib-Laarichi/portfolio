@@ -64,29 +64,91 @@
       "databases": "Bases de Données & Cloud",
       "tools": "Outils de Développement"
     },
-    "viewCertificate": "Voir Certificat"
+    "viewCertificate": "Voir Certificat",
+    "items": {
+      "networking": [
+        "Configuration Router & Switch",
+        "Déploiement Serveur (Windows Server, Linux)",
+        "Gestion LAN",
+        "Sécurité Réseau & Monitoring",
+        "Dépannage",
+        "Virtualisation",
+        "Cisco ISE"
+      ],
+      "programming": [
+        "Java",
+        "JavaScript",
+        "Node.js",
+        "HTML/CSS",
+        "TypeScript",
+        "Python",
+        "PowerShell"
+      ],
+      "databases": [
+        "MySQL",
+        "MongoDB",
+        "Microsoft SQL Server",
+        "Oracle Database",
+        "PostgreSQL",
+        "Azure Cloud",
+        "AWS"
+      ],
+      "tools": [
+        "JEE (Java Enterprise Edition)",
+        "Express.js",
+        "Next.js",
+        "React",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Git"
+      ]
+    }
   },
   "experience": {
     "title": "Expérience Professionnelle",
     "subtitle": "Mon parcours technologique",
     "jobs": [
       {
-        "title": "Stagiaire Administrateur Réseau",
-        "company": "TechCorp Solutions", 
-        "period": "Juin 2024 - Août 2024",
-        "description": "Configuration et maintenance de l'infrastructure réseau, mise en œuvre de protocoles de sécurité, et support technique pour les systèmes d'entreprise."
+        "period": "Été 2025",
+        "title": "Stagiaire d'Été",
+        "company": "HA Groupe",
+        "location": "Marrakech",
+        "description": "Développement de la plateforme Mkhademia - une plateforme web complète pour les freelancers marocains. Direction de l'implémentation technique avec des technologies web modernes et gestion du cycle de développement complet.",
+        "achievements": [
+          "Construction d'application web full-stack avec Node.js et Next.js",
+          "Implémentation de l'authentification utilisateur et gestion des profils",
+          "Conception et développement de l'architecture base de données MongoDB",
+          "Création d'interface utilisateur responsive avec patterns de design modernes"
+        ],
+        "type": "stage"
       },
       {
-        "title": "Spécialiste Support IT",
-        "company": "Digital Services Inc.",
-        "period": "Janvier 2024 - Mai 2024",
-        "description": "Support technique complet, résolution de problèmes matériels et logiciels, assistance dans les déploiements système."
+        "period": "Mai - Juin 2023",
+        "title": "Technicien IT (Stagiaire)",
+        "company": "Phone Dreams",
+        "location": "Marrakech",
+        "description": "Expérience pratique en support IT et gestion d'infrastructure. Responsable des réparations matérielles, configuration serveur et dépannage technique.",
+        "achievements": [
+          "Diagnostics matériels et réparations sur divers appareils",
+          "Configuration et maintenance de l'infrastructure serveur",
+          "Support technique aux utilisateurs finaux",
+          "Documentation des procédures de réparation et protocoles de maintenance"
+        ],
+        "type": "stage"
       },
       {
-        "title": "Développeur Junior",
-        "company": "WebDev Agency", 
-        "period": "Septembre 2023 - Décembre 2023",
-        "description": "Développement d'applications web avec des frameworks modernes, collaboration avec les équipes design, maintenance des référentiels de code."
+        "period": "Juin 2022",
+        "title": "Assistant Technicien (Stagiaire)",
+        "company": "CHU (Centre Hospitalier Universitaire)",
+        "location": "Marrakech",
+        "description": "Travail sur des projets d'infrastructure réseau critiques en environnement hospitalier. Expérience avec équipements et protocoles réseau de niveau entreprise.",
+        "achievements": [
+          "Installation et maintenance de câblage structuré",
+          "Exécution d'épissage et tests de fibre optique",
+          "Configuration de commutateurs réseau et équipement de routage",
+          "Collaboration avec équipe IT pour optimisation réseau"
+        ],
+        "type": "stage"
       }
     ]
   },
@@ -225,14 +287,65 @@
   },
   "footer": {
     "brand": "SOHAIB LAARICHI",
+    "tagline": "Ingénieur Réseau & Développeur Full-Stack",
+    "description": "Créer des solutions technologiques innovantes et robustes pour transformer les idées en réalité numérique.",
     "quickLinks": "Liens Rapides",
     "connect": "Connectez-vous avec Moi",
     "rights": "Tous droits réservés.",
-    "backToTop": "Retour en Haut"
+    "backToTop": "Retour en Haut",
+    "madeWith": "Fait avec",
+    "and": "et",
+    "in": "au",
+    "location": "Marrakech, Maroc",
+    "links": {
+      "home": "Accueil",
+      "about": "À Propos", 
+      "skills": "Compétences",
+      "experience": "Expérience",
+      "projects": "Projets",
+      "contact": "Contact"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub", 
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "email": "Email"
+    }
   },
   "stats": {
     "projects": "Projets Complétés",
     "certifications": "Certifications",
     "experience": "Années d'Expérience"
+  },
+  "mobile": {
+    "menu": "Menu",
+    "close": "Fermer",
+    "navigation": "Navigation",
+    "language": "Langue",
+    "theme": "Thème",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Réessayer"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "view": "Voir",
+    "download": "Télécharger",
+    "share": "Partager",
+    "copy": "Copier",
+    "copied": "Copié!",
+    "more": "Plus",
+    "less": "Moins",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   }
 }

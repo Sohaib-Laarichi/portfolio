@@ -19,6 +19,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sohaib-laarichi.netlify.app'),
   title: 'Sohaib Laarichi - Ingénieur Réseau & Développeur Maroc | Portfolio Professionnel',
   description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant EMSI Marrakech, spécialiste sécurité réseau Cisco, développement Java Spring Boot, Next.js. Services informatiques professionnels au Maroc.',
   keywords: [

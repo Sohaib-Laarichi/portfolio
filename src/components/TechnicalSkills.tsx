@@ -7,65 +7,39 @@ import { useTranslation } from 'react-i18next'
 const TechnicalSkills = () => {
   const { t, i18n } = useTranslation()
   const isRTL = i18n.language === 'ar'
-  const getSkillCategories = () => [
-    {
-      title: t('skills.categories.networking'),
-      icon: Shield,
-      color: "bg-blue-500",
-      skills: [
-        "Router & Switch Configuration",
-        "Server Deployment (Windows Server, Linux)",
-        "LAN Management",
-        "Network Security & Monitoring",
-        "Troubleshooting",
-        "Virtualization",
-        "Cisco ISE"
-      ]
-    },
-    {
-      title: t('skills.categories.programming'),
-      icon: Code,
-      color: "bg-green-500",
-      skills: [
-        "Java",
-        "JavaScript",
-        "Node.js",
-        "HTML/CSS",
-        "TypeScript",
-        "Python",
-        "PowerShell"
-      ]
-    },
-    {
-      title: t('skills.categories.tools'),
-      icon: Settings,
-      color: "bg-purple-500",
-      skills: [
-        "JEE (Java Enterprise Edition)",
-        "Express.js",
-        "Next.js",
-        "React",
-        "Bootstrap",
-        "Tailwind CSS",
-        "Git"
-      ]
-    },
-    {
-      title: t('skills.categories.databases'),
-      icon: Database,
-      color: "bg-orange-500",
-      skills: [
-        "MySQL",
-        "Oracle",
-        "SQL Server",
-        "MongoDB",
-        "UML",
-        "Apache POI",
-        "Eclipse",
-        "Android Studio"
-      ]
-    }
-  ]
+  const getSkillCategories = () => {
+    const networking = t('skills.items.networking', { returnObjects: true })
+    const programming = t('skills.items.programming', { returnObjects: true })
+    const tools = t('skills.items.tools', { returnObjects: true })
+    const databases = t('skills.items.databases', { returnObjects: true })
+
+    return [
+      {
+        title: t('skills.categories.networking'),
+        icon: Shield,
+        color: "bg-blue-500",
+        skills: Array.isArray(networking) ? networking : []
+      },
+      {
+        title: t('skills.categories.programming'),
+        icon: Code,
+        color: "bg-green-500",
+        skills: Array.isArray(programming) ? programming : []
+      },
+      {
+        title: t('skills.categories.tools'),
+        icon: Settings,
+        color: "bg-purple-500",
+        skills: Array.isArray(tools) ? tools : []
+      },
+      {
+        title: t('skills.categories.databases'),
+        icon: Database,
+        color: "bg-orange-500",
+        skills: Array.isArray(databases) ? databases : []
+      }
+    ]
+  }
 
   const certifications = [
     {

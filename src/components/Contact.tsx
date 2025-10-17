@@ -300,12 +300,11 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-6">
-            Get In Touch
+            {t('contact.title')}
           </h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to discuss your next project or explore collaboration opportunities? 
-            I&apos;d love to hear from you.
+            {t('contact.description')}
           </p>
         </motion.div>
 
@@ -319,7 +318,7 @@ const Contact = () => {
             className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700"
           >
             <h3 className="text-2xl font-bold font-display text-gray-800 dark:text-white mb-6">
-              Send me a message
+              {t('contact.cta')}
             </h3>
             
             {isSubmitted && (
@@ -330,7 +329,7 @@ const Contact = () => {
               >
                 <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 mr-3" />
                 <span className="text-green-700 dark:text-green-300 font-medium">
-                  Message sent successfully! I&apos;ll get back to you soon.
+                  {t('contact.form.success')}
                 </span>
               </motion.div>
             )}
@@ -339,7 +338,7 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Your Name *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -349,12 +348,12 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
-                    placeholder="John Doe"
+                    placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email Address *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -364,14 +363,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
-                    placeholder="john@example.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Subject *
+                  {t('contact.form.subject')} *
                 </label>
                 <input
                   type="text"
@@ -381,13 +380,13 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
-                  placeholder="Project Collaboration Opportunity"
+                  placeholder={t('contact.form.subjectPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Message *
+                  {t('contact.form.message')} *
                 </label>
                 <textarea
                   id="message"
@@ -397,7 +396,7 @@ const Contact = () => {
                   required
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 resize-none"
-                  placeholder="Tell me about your project or how we can work together..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                 ></textarea>
               </div>
 
@@ -409,12 +408,12 @@ const Contact = () => {
                 {isSubmitting ? (
                   <div className="flex items-center">
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    Sending...
+                    {t('contact.form.sending')}
                   </div>
                 ) : (
                   <div className="flex items-center">
                     <Send className="w-5 h-5 mr-2" />
-                    Send Message
+                    {t('contact.form.send')}
                   </div>
                 )}
               </button>
@@ -431,12 +430,10 @@ const Contact = () => {
           >
             <div>
               <h3 className="text-2xl font-bold font-display text-gray-800 dark:text-white mb-6">
-                Contact Information
+                {t('contact.info.title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Feel free to reach out through any of the following channels. 
-                I typically respond within 24 hours and look forward to discussing 
-                how we can work together.
+                {t('contact.info.subtitle')}
               </p>
             </div>
 
@@ -475,7 +472,7 @@ const Contact = () => {
             {/* Social Links */}
             <div>
               <h4 className="text-xl font-bold font-display text-gray-800 dark:text-white mb-4">
-                Connect with me
+                {t('contact.social.title')}
               </h4>
               <div className="flex flex-wrap gap-4">
                 {socialLinks.map((social, index) => {

@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "ignorePatterns": ["*.md"],
+  "rules": {
+    "react/no-unescaped-entities": "off"
+  }
 }
