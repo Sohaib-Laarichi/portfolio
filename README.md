@@ -1,23 +1,25 @@
 # 🚀 Portfolio Sohaib Laarichi - Next.js 15
 
-Un portfolio professionnel moderne avec système de tracking avancé et interface d'administration complète.
+Un portfolio professionnel moderne avec arrière-plan UI diptych dynamique, système de tracking avancé et interface d'administration complète.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.5-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-06B6D4?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-ff69b4?style=flat&logo=framer)](https://www.framer.com/motion/)
+[![i18next](https://img.shields.io/badge/i18next-Multilang-26A69A?style=flat&logo=i18next)](https://www.i18next.com/)
 
 ## 📋 Table des Matières
 
 - [✨ Fonctionnalités](#-fonctionnalités)
 - [🔧 Technologies](#-technologies)
-- [🚀 Installation](#-installation)
+- [🎨 UI Background Diptych](#-ui-background-diptych)
+- [� Responsive Design](#-responsive-design)
+- [�🚀 Installation](#-installation)
 - [📧 Configuration Email](#-configuration-email)
 - [🍪 Système de Tracking](#-système-de-tracking)
 - [👤 Interface Admin](#-interface-admin)
 - [📱 Projets Présentés](#-projets-présentés)
 - [🌍 Internationalisation](#-internationalisation)
-- [🎨 Design & Animations](#-design--animations)
 - [🔒 Sécurité](#-sécurité)
 - [📁 Structure du Projet](#-structure-du-projet)
 - [🛠️ Scripts Disponibles](#️-scripts-disponibles)
@@ -29,9 +31,12 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 
 - **7 projets détaillés** avec technologies spécialisées
 - **Sections organisées** : Hero, About, Skills, Experience, Projects, Contact
-- **Design responsive** optimisé mobile/tablet/desktop
-- **Animations fluides** avec Framer Motion
-- **Mode sombre/clair** avec transition automatique
+- **Design responsive** optimisé mobile/tablet/desktop avec menu fullscreen
+- **Animations fluides** avec Framer Motion et particules dynamiques
+- **Mode sombre par défaut** avec transitions automatiques sans flash
+- **Arrière-plans UI diptych** : paysages transformables (matin ↔ nuit)
+- **Système de particules** adaptatif (oiseaux → lucioles, pétales → étoiles)
+- **Éléments SVG interactifs** qui évoluent avec le thème
 
 ### 🍪 Système de Tracking Ultra-Avancé
 
@@ -53,10 +58,59 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 - **Informations forensiques** détaillées
 
 ### 📧 Système Email Intégré
+
 - **Gmail SMTP** configuré avec mot de passe d'application
 - **Templates HTML** professionnels
 - **Sauvegarde locale** de tous les messages
 - **Notifications instantanées** par email
+
+## 🎨 UI Background Diptych
+
+### Système d'Arrière-Plan Dynamique
+
+Le portfolio intègre un système d'arrière-plan UI diptych unique qui transforme visuellement l'expérience selon le thème :
+
+**🌅 Mode Clair (Matin)**
+- Gradients dorés et orangés évoquant l'aube
+- Particules flottantes simulant des oiseaux et des pétales
+- Éléments SVG représentant un paysage matinal serein
+- Animations douces et énergisantes
+
+**🌙 Mode Sombre (Nuit)**
+- Gradients indigo et violets créant une atmosphère nocturne
+- Particules transformées en lucioles et étoiles filantes
+- Éléments SVG métamorphosés en paysage lunaire mystique
+- Animations apaisantes et contemplatives
+
+### Composants Techniques
+
+- **`DynamicBackground`** : Gestion des gradients CSS animés
+- **`FloatingParticles`** : Système de particules adaptatif (50+ éléments)
+- **`ThemeTransition`** : Transitions fluides entre modes (0.5s)
+- **`SectionBackground`** : Arrière-plans personnalisés par section
+- **`ParallaxElements`** : Effets de parallaxe et profondeur
+
+## 📱 Responsive Design
+
+### Optimisations Mobile
+
+- **Menu Fullscreen** : Navigation mobile avec overlay immersif
+- **Typography Adaptive** : Tailles de texte optimisées pour chaque breakpoint
+- **Touch Targets** : Boutons et liens adaptés aux interactions tactiles
+- **Grid Responsive** : Grilles qui s'adaptent (1→2→3 colonnes)
+- **Image Optimization** : Tailles d'images réduites sur mobile
+- **Performance** : Lazy loading et optimisations de rendu
+
+### Breakpoints Tailwind
+
+```css
+/* Mobile First */
+sm: 640px   /* Petits écrans */
+md: 768px   /* Tablettes */
+lg: 1024px  /* Ordinateurs portables */
+xl: 1280px  /* Grands écrans */
+2xl: 1536px /* Écrans ultra-larges */
+```
 
 ## 🔧 Technologies
 
@@ -82,6 +136,16 @@ Un portfolio professionnel moderne avec système de tracking avancé et interfac
 - **ESLint** - Linting du code
 - **Prettier** - Formatage automatique
 - **Git** - Contrôle de version
+
+### Nouveaux Composants UI
+
+- **`DynamicBackground`** - Arrière-plans CSS gradients animés
+- **`FloatingParticles`** - Système de particules adaptatif avec thèmes
+- **`ThemeTransition`** - Transitions fluides entre modes clair/sombre
+- **`SectionBackground`** - Arrière-plans personnalisés par section
+- **`ParallaxElements`** - Effets de parallaxe et profondeur 3D
+- **`ScrollToTop`** - Bouton retour en haut optimisé mobile
+- **`ScrollProgressBar`** - Barre de progression de lecture
 
 ## 🚀 Installation
 
@@ -468,11 +532,23 @@ Ce portfolio intègre le système de tracking le plus avancé jamais développé
 - **Détection géographique** automatique
 - **Adaptation culturelle** des contenus
 
+### 🆕 Mises à Jour Récentes (Octobre 2025)
+
+- ✅ **UI Background Diptych** : Arrière-plans transformables (matin ↔ nuit)
+- ✅ **Système de Particules** : 50+ éléments adaptatifs (oiseaux → lucioles)
+- ✅ **Mode Sombre par Défaut** : Activation automatique sans flash
+- ✅ **Responsive Mobile** : Menu fullscreen et optimisations tactiles
+- ✅ **Composants Modulaires** : Architecture componentisée avancée
+- ✅ **Transitions Fluides** : Animations de 0.5s entre thèmes
+- ✅ **Performance** : Build optimisé et lazy loading intelligent
+
 ---
 
 <div align="center">
 
-**⭐ Si ce projet vous plaît, n'hésitez pas à lui donner une étoile !**
+**🚀 Portfolio Moderne avec UI Diptych Dynamique**
+
+**⭐ Si ce projet vous inspire, n'hésitez pas à lui donner une étoile !**
 
 Fait avec ❤️ par [Sohaib Laarichi](https://github.com/Sohaib-Laarichi)
 

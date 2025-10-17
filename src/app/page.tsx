@@ -6,25 +6,32 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import FloatingParticles from '@/components/FloatingParticles'
+import DynamicBackground from '@/components/DynamicBackground'
+import ThemeTransition from '@/components/ThemeTransition'
 import AnimatedIcons from '@/components/AnimatedIcons'
 import CustomCursor from '@/components/CustomCursor'
 import ScrollToTop from '@/components/ScrollToTop'
 import ScrollProgressBar from '@/components/ScrollProgressBar'
+import SectionBackground from '@/components/SectionBackground'
+import ParallaxElements from '@/components/ParallaxElements'
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 transition-colors duration-500 relative overflow-x-hidden">
+    <main className="w-full min-h-screen relative overflow-x-hidden">
+      {/* Dynamic Theme Background */}
+      <ThemeTransition />
+      <DynamicBackground />
+      
       {/* Custom Cursor (Desktop only) */}
       <div className="hidden lg:block fixed inset-0 z-50 pointer-events-none">
         <CustomCursor />
       </div>
       
-      {/* Background Animations - Full Screen */}
-      <div className="fixed inset-0 z-0">
-        <FloatingParticles />
-      </div>
-      <div className="fixed inset-0 z-1">
+      {/* Parallax Elements */}
+      <ParallaxElements />
+      
+      {/* Additional Background Animations */}
+      <div className="fixed inset-0 z-5">
         <AnimatedIcons />
       </div>
       
@@ -35,30 +42,30 @@ export default function Home() {
         
         <Navbar />
         
-        {/* Full viewport sections */}
-        <div className="w-full">
+        {/* Full viewport sections with dynamic backgrounds */}
+        <SectionBackground type="hero" className="w-full">
           <Hero />
-        </div>
+        </SectionBackground>
         
-        <div className="w-full">
+        <SectionBackground type="about" className="w-full">
           <About />
-        </div>
+        </SectionBackground>
         
-        <div className="w-full">
+        <SectionBackground type="skills" className="w-full">
           <TechnicalSkills />
-        </div>
+        </SectionBackground>
         
-        <div className="w-full">
+        <SectionBackground type="experience" className="w-full">
           <Experience />
-        </div>
+        </SectionBackground>
         
-        <div className="w-full">
+        <SectionBackground type="projects" className="w-full">
           <Projects />
-        </div>
+        </SectionBackground>
         
-        <div className="w-full">
+        <SectionBackground type="contact" className="w-full">
           <Contact />
-        </div>
+        </SectionBackground>
         
         <div className="w-full">
           <Footer />

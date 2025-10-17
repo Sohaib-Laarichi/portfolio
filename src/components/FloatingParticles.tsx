@@ -1,101 +1,119 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
 
-interface Particle {
-  x: number
-  y: number
-  vx: number
-  vy: number
-  size: number
-  opacity: number
-  color: string
+interface FloatingParticlesProps {
+  count?: number
+  type?: 'default' | 'fireflies' | 'birds'
+  color?: string
 }
 
-const FloatingParticles = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const animationRef = useRef<number>(0)
-  const particlesRef = useRef<Particle[]>([])
+const FloatingParticles = ({ count = 20, type = 'default', color = '#3B82F6' }: FloatingParticlesProps) => {
+  
+  if (type === 'fireflies') {
+    return (
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(count)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 rounded-full"
+            style={{
+              background: `radial-gradient(circle, ${color} 0%, transparent 70%)`,
+              boxShadow: `0 0 8px ${color}`,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              x: [0, 30, -20, 40, 0],
+              y: [0, -25, 15, -35, 0],
+              opacity: [0.3, 1, 0.5, 1, 0.3],
+            }}
+            transition={{
+              duration: 6 + Math.random() * 4,
+              repeat: Infinity,
+              delay: Math.random() * 3,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
+      </div>
+    )
+  }
 
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
+  if (type === 'birds') {
+    return (
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(count)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute"
+            style={{
+              left: `${Math.random() * 20}%`,
+              top: `${10 + Math.random() * 30}%`,
+            }}
+            animate={{
+              x: [0, 1200],
+              y: [0, -20, 10, -15, 5],
+            }}
+            transition={{
+              duration: 20 + Math.random() * 10,
+              repeat: Infinity,
+              delay: i * 3,
+              ease: "easeInOut",
+            }}
+          >
+            <svg width="20" height="16" viewBox="0 0 20 16" className="drop-shadow-sm">
+              <motion.path
+                d="M3,8 Q7,4 10,8 Q13,4 17,8"
+                stroke={color}
+                strokeWidth="2"
+                fill="none"
+                strokeLinecap="round"
+                animate={{
+                  d: [
+                    "M3,8 Q7,4 10,8 Q13,4 17,8",
+                    "M3,8 Q7,10 10,8 Q13,10 17,8",
+                    "M3,8 Q7,4 10,8 Q13,4 17,8",
+                  ],
+                }}
+                transition={{
+                  duration: 0.6,
+                  repeat: Infinity,
+                }}
+              />
+            </svg>
+          </motion.div>
+        ))}
+      </div>
+    )
+  }
 
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
-    }
-
-    const createParticles = () => {
-      const particles: Particle[] = []
-      const particleCount = Math.floor((canvas.width * canvas.height) / 15000)
-      
-      for (let i = 0; i < particleCount; i++) {
-        particles.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.5,
-          vy: (Math.random() - 0.5) * 0.5,
-          size: Math.random() * 3 + 1,
-          opacity: Math.random() * 0.5 + 0.1,
-          color: Math.random() > 0.5 ? '#3B82F6' : '#10B981'
-        })
-      }
-      particlesRef.current = particles
-    }
-
-    const animateParticles = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
-      
-      particlesRef.current.forEach((particle) => {
-        particle.x += particle.vx
-        particle.y += particle.vy
-
-        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1
-        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1
-
-        ctx.beginPath()
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = particle.color
-        ctx.globalAlpha = particle.opacity
-        ctx.fill()
-      })
-
-      animationRef.current = requestAnimationFrame(animateParticles)
-    }
-
-    resizeCanvas()
-    createParticles()
-    animateParticles()
-
-    const handleResize = () => {
-      resizeCanvas()
-      createParticles()
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current)
-      }
-    }
-  }, [])
-
+  // Default particles
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 w-full h-full pointer-events-none z-0"
-      style={{ 
-        background: 'transparent',
-        width: '100vw',
-        height: '100vh'
-      }}
-    />
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      {[...Array(count)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-1 h-1 rounded-full"
+          style={{
+            background: color,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+          }}
+          animate={{
+            x: [0, 20, -15, 25, 0],
+            y: [0, -30, 10, -20, 0],
+            opacity: [0.1, 0.8, 0.3, 0.9, 0.1],
+          }}
+          transition={{
+            duration: 8 + Math.random() * 6,
+            repeat: Infinity,
+            delay: Math.random() * 4,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+    </div>
   )
 }
 
