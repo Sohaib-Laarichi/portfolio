@@ -16,7 +16,7 @@ export default function StructuredData() {
       "Network Engineer Morocco"
     ],
     "jobTitle": "Network & Software Engineer",
-    "description": "Ingénieur Réseau et Développeur Full-Stack au Maroc, spécialisé en sécurité réseau Cisco, développement Java Spring Boot et architecture système. Étudiant EMSI Marrakech offrant services IT professionnels.",
+    "description": "Ingénieur Réseau et Développeur Full-Stack au Maroc, spécialisé en sécurité réseau Cisco, développement Java Spring Boot et architecture système. Étudiant en 5ème année Ingénierie EMSI Marrakech offrant services IT professionnels.",
     "url": "https://sohaib-laarichi.netlify.app",
     "image": "https://sohaib-laarichi.netlify.app/images/me.png",
     "email": "sohaiblaarichi112@gmail.com",

@@ -10,9 +10,9 @@ const About = () => {
   const isRTL = i18n.language === 'ar'
   const education = [
     {
-      period: "2024-2026 (In Progress)",
-      degree: "Computer Engineering Degree (MIAGE Option)",
-      institution: "EMSI, Marrakech",
+      period: "2021-2026 (5ème année - In Progress)",
+      degree: "Diplôme d'Ingénieur en Informatique (Option MIAGE)",
+      institution: "EMSI - École Marocaine des Sciences de l'Ingénieur, Marrakech",
       logo: "/images/emsi-logo.svg"
     },
     {
@@ -24,7 +24,7 @@ const About = () => {
     {
       period: "2020-2021",
       degree: "Baccalaureate in Electrical Science and Technologies",
-      institution: "Mohamed V High School, Essaouira",
+      institution: "Mohamed VI High School, Marrakech",
       logo: "/images/lycee-logo.svg"
     }
   ]
