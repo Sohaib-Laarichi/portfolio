@@ -13,12 +13,13 @@ Un portfolio professionnel moderne avec arrière-plan UI diptych dynamique, syst
 - [✨ Fonctionnalités](#-fonctionnalités)
 - [🔧 Technologies](#-technologies)
 - [🎨 UI Background Diptych](#-ui-background-diptych)
-- [� Responsive Design](#-responsive-design)
-- [�🚀 Installation](#-installation)
+- [📱 Responsive Design](#-responsive-design)
+- [ Installation](#-installation)
 - [📧 Configuration Email](#-configuration-email)
 - [🍪 Système de Tracking](#-système-de-tracking)
 - [👤 Interface Admin](#-interface-admin)
 - [📱 Projets Présentés](#-projets-présentés)
+- [🎓 Certifications Professionnelles](#-certifications-professionnelles)
 - [🌍 Internationalisation](#-internationalisation)
 - [🔒 Sécurité](#-sécurité)
 - [📁 Structure du Projet](#-structure-du-projet)
@@ -30,6 +31,7 @@ Un portfolio professionnel moderne avec arrière-plan UI diptych dynamique, syst
 ### 🎯 Portfolio Complet
 
 - **7 projets détaillés** avec technologies spécialisées
+- **6 certifications professionnelles** (IBM, Microsoft, University of Pennsylvania, Meta)
 - **Sections organisées** : Hero, About, Skills, Experience, Projects, Contact
 - **Design responsive** optimisé mobile/tablet/desktop avec menu fullscreen
 - **Animations fluides** avec Framer Motion et particules dynamiques
@@ -295,7 +297,23 @@ Le système capture automatiquement pour chaque visiteur :
 - **Type** : Network Security
 - **Technologies** : Cisco ISE, Network Access Control
 
-## 🌍 Internationalisation
+## � Certifications Professionnelles
+
+### Cybersécurité & Infrastructure
+- **Introduction to Cybersecurity Careers** - IBM/Coursera (2025)
+- **Microsoft 365 and Azure Security Administration** - Microsoft/Coursera (2024)
+- **Virtual Networks in Azure** - Microsoft/Coursera (2024)
+
+### Développement & Programmation
+- **Introduction to Java and Object-Oriented Programming** - University of Pennsylvania/Coursera (2025)
+- **React Basics** - Meta/Coursera (2025)
+
+### DevOps & Conteneurisation
+- **Introduction to Containers with Docker, Kubernetes, and OpenShift** - IBM/Coursera (2024)
+
+Toutes les certifications sont vérifiables via les liens Coursera intégrés dans le portfolio.
+
+## �🌍 Internationalisation
 
 ### Langues supportées
 - **🇫🇷 Français** - Langue par défaut

@@ -59,6 +59,24 @@ const TechnicalSkills = () => {
       provider: "Microsoft/Coursera",
       year: "2024",
       link: "https://www.coursera.org/account/accomplishments/verify/OMB7TVTDZPMN"
+    },
+    {
+      name: "Introduction to Cybersecurity Careers",
+      provider: "IBM/Coursera",
+      year: "2025",
+      link: "https://coursera.org/share/c0b09d863307b7d6510149b0bbe4d819"
+    },
+    {
+      name: "Introduction to Java and Object-Oriented Programming",
+      provider: "University of Pennsylvania/Coursera",
+      year: "2025",
+      link: "https://coursera.org/share/0a31c9c6a10d188100397acacada0cea"
+    },
+    {
+      name: "React Basics",
+      provider: "Meta/Coursera",
+      year: "2025",
+      link: "https://coursera.org/share/ecd3690e5151be1bb40d937274789a62"
     }
   ]
 
@@ -143,7 +161,7 @@ const TechnicalSkills = () => {
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.name}
