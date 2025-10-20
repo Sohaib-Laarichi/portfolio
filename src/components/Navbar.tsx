@@ -82,12 +82,12 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button and controls */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="md:hidden flex items-center space-x-1">
             <LanguageSwitcher />
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none"
+              className="inline-flex items-center justify-center p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 active:bg-gray-100 dark:active:bg-gray-800 focus:outline-none transition-colors duration-200 min-w-[48px] min-h-[48px] touch-manipulation"
               aria-label={isMobileMenuOpen ? t('mobile.menu.close') : t('mobile.menu.open')}
             >
               {isMobileMenuOpen ? (
@@ -102,21 +102,36 @@ const Navbar = () => {
           {/* Mobile Navigation - fullscreen overlay for better touch targets */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <div className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm p-6">
-              <div className="w-full max-w-sm space-y-3">
-                {navItems.map((item) => (
+            <div className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm p-4">
+              
+              {/* Close button at top right */}
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-4 right-4 p-3 rounded-lg text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 active:bg-gray-100 dark:active:bg-gray-800 transition-colors duration-200 min-w-[48px] min-h-[48px] touch-manipulation"
+                aria-label="Fermer le menu"
+              >
+                <X className="h-6 w-6" />
+              </button>
+
+              <div className="w-full max-w-sm space-y-2">
+                {navItems.map((item, index) => (
                   <button
                     key={item.name}
                     onClick={() => scrollToSection(item.href)}
-                    className="text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 block px-4 py-4 text-lg font-medium w-full text-left transition-colors duration-200 rounded-lg bg-white/30 dark:bg-gray-800/30"
+                    className="text-gray-800 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 active:text-primary-700 dark:active:text-primary-300 block px-6 py-4 text-lg font-medium w-full text-left transition-all duration-200 rounded-xl bg-white/50 dark:bg-gray-800/50 hover:bg-white/70 dark:hover:bg-gray-800/70 active:bg-white/90 dark:active:bg-gray-800/90 shadow-sm hover:shadow-md active:shadow-lg min-h-[56px] touch-manipulation transform active:scale-98"
+                    style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {item.name}
                   </button>
                 ))}
 
-                <div className="flex items-center justify-between mt-4">
-                  <LanguageSwitcher />
-                  <ThemeToggle />
+                <div className="flex items-center justify-center space-x-4 mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                  <div className="p-2">
+                    <LanguageSwitcher />
+                  </div>
+                  <div className="p-2">
+                    <ThemeToggle />
+                  </div>
                 </div>
               </div>
             </div>

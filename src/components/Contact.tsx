@@ -297,27 +297,27 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-6">
+          <h2 className="text-3xl xs:text-4xl sm:text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-4 sm:mb-6 px-4">
             {t('contact.title')}
           </h2>
-          <div className="w-20 h-1 bg-primary-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <div className="w-16 sm:w-20 h-1 bg-primary-600 mx-auto mb-6 sm:mb-8"></div>
+          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4 sm:px-0">
             {t('contact.description')}
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700"
+            className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 sm:p-8 border border-gray-100 dark:border-gray-700"
           >
-            <h3 className="text-2xl font-bold font-display text-gray-800 dark:text-white mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold font-display text-gray-800 dark:text-white mb-4 sm:mb-6">
               {t('contact.cta')}
             </h3>
             
@@ -334,8 +334,8 @@ const Contact = () => {
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+              <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     {t('contact.form.name')} *
@@ -347,7 +347,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+                    className="w-full px-4 py-3 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 min-h-[48px] text-base touch-manipulation"
                     placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
@@ -362,7 +362,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+                    className="w-full px-4 py-3 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 min-h-[48px] text-base touch-manipulation"
                     placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
@@ -379,7 +379,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
+                  className="w-full px-4 py-3 sm:py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 min-h-[48px] text-base touch-manipulation"
                   placeholder={t('contact.form.subjectPlaceholder')}
                 />
               </div>
@@ -394,8 +394,8 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 resize-none"
+                  rows={5}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 resize-none min-h-[120px] text-base touch-manipulation"
                   placeholder={t('contact.form.messagePlaceholder')}
                 ></textarea>
               </div>
@@ -403,7 +403,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-primary-600 hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-700 dark:hover:bg-primary-600 dark:active:bg-primary-800 text-white px-6 sm:px-8 py-4 sm:py-4 rounded-lg font-semibold transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center min-h-[52px] text-base touch-manipulation shadow-lg hover:shadow-xl active:shadow-md"
               >
                 {isSubmitting ? (
                   <div className="flex items-center">
@@ -426,13 +426,13 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
           >
-            <div>
-              <h3 className="text-2xl font-bold font-display text-gray-800 dark:text-white mb-6">
+            <div className="px-4 sm:px-0">
+              <h3 className="text-xl sm:text-2xl font-bold font-display text-gray-800 dark:text-white mb-4 sm:mb-6">
                 {t('contact.info.title')}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed">
                 {t('contact.info.subtitle')}
               </p>
             </div>
@@ -474,7 +474,7 @@ const Contact = () => {
               <h4 className="text-xl font-bold font-display text-gray-800 dark:text-white mb-4">
                 {t('contact.social.title')}
               </h4>
-              <div className="flex flex-wrap gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 px-4 sm:px-0">
                 {socialLinks.map((social, index) => {
                   const IconComponent = social.icon
                   return (
@@ -483,10 +483,10 @@ const Contact = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`p-4 bg-gray-800 dark:bg-gray-700 text-white rounded-xl transition-all duration-300 hover:transform hover:scale-110 ${social.color} shadow-lg hover:shadow-xl`}
+                      className={`p-4 sm:p-4 bg-gray-800 dark:bg-gray-700 text-white rounded-xl transition-all duration-300 hover:transform hover:scale-110 active:scale-95 ${social.color} shadow-lg hover:shadow-xl active:shadow-md min-h-[60px] min-w-[60px] flex items-center justify-center touch-manipulation`}
                       title={social.name}
                     >
-                      <IconComponent className="w-6 h-6" />
+                      <IconComponent className="w-6 h-6 sm:w-6 sm:h-6" />
                     </a>
                   )
                 })}
@@ -494,11 +494,11 @@ const Contact = () => {
             </div>
 
             {/* Availability */}
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl p-6 border border-primary-200 dark:border-primary-700">
-              <h4 className="font-bold text-primary-900 dark:text-primary-100 mb-3 font-display">
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-xl p-4 sm:p-6 border border-primary-200 dark:border-primary-700 mx-4 sm:mx-0">
+              <h4 className="font-bold text-primary-900 dark:text-primary-100 mb-3 font-display text-base sm:text-lg">
                 Current Availability
               </h4>
-              <p className="text-primary-700 dark:text-primary-300 text-sm leading-relaxed">
+              <p className="text-primary-700 dark:text-primary-300 text-sm sm:text-sm leading-relaxed">
                 <strong>Open for opportunities:</strong> Internships, part-time projects, 
                 and collaboration on innovative technology solutions. Available for 
                 immediate start on exciting projects.

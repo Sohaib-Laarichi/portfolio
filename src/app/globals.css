@@ -32,6 +32,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Optimisations pour mobile */
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+.active\:scale-98:active {
+  transform: scale(0.98);
+}
+
+/* Amélioration des zones tactiles */
+@media (max-width: 768px) {
+  button, a, input, textarea, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Réduction des animations sur appareils moins performants */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
 .section-padding {
   padding-left: 1rem;
   padding-right: 1rem;
