@@ -21,7 +21,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sohaib-laarichi.netlify.app'),
   title: 'Sohaib Laarichi - Ingénieur Réseau & Développeur Maroc | Portfolio Professionnel',
-  description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant en 5ème année Ingénierie EMSI Marrakech, spécialiste sécurité réseau Cisco, développement Java Spring Boot, Next.js. Services informatiques professionnels au Maroc.',
+  description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant EMSI Marrakech, spécialiste sécurité réseau Cisco, développement Java Spring Boot, Next.js. Services informatiques professionnels au Maroc.',
   keywords: [
     // Nom et variations principales
     'Sohaib Laarichi',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     'École Marocaine Sciences Ingénieur',
     'UPM Marrakech',
     'Université Privée Marrakech',
-    'Étudiant 5ème année Ingénieur Maroc',
+    'Étudiant Ingénieur Maroc',
     'Computer Engineering Morocco',
     
     // Technologies avec localisation
@@ -122,7 +122,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Sohaib Laarichi - Ingénieur Réseau & Développeur Maroc | Portfolio',
-    description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant 5ème année EMSI Marrakech, expert Cisco, Java, Spring Boot. Services IT professionnels Morocco.',
+    description: 'Portfolio de Sohaib Laarichi, Ingénieur Réseau et Développeur Full-Stack au Maroc. Étudiant EMSI Marrakech, expert Cisco, Java, Spring Boot. Services IT professionnels Morocco.',
     url: 'https://sohaib-laarichi.netlify.app',
     siteName: 'Sohaib Laarichi Portfolio Morocco',
     type: 'website',

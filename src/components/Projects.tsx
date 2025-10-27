@@ -181,32 +181,45 @@ const Projects = () => {
 
   const getCategoryColor = (category: string) => {
     const colors = {
-      "Mobile & Backend Development": "bg-indigo-500",
-      "Full-Stack Web Platform": "bg-cyan-500",
-      "Web Development": "bg-blue-500",
-      "Enterprise Application": "bg-green-500",
-      "Desktop Application": "bg-purple-500",
-      "Network Infrastructure": "bg-orange-500",
-      "Network Security": "bg-red-500"
+      "Mobile & Backend Development": "from-indigo-600 to-indigo-700",
+      "Full-Stack Web Platform": "from-cyan-600 to-cyan-700",
+      "Web Development": "from-blue-600 to-blue-700",
+      "Enterprise Application": "from-emerald-600 to-emerald-700",
+      "Desktop Application": "from-purple-600 to-purple-700",
+      "Network Infrastructure": "from-amber-600 to-amber-700",
+      "Network Security": "from-red-600 to-red-700"
     }
-    return colors[category as keyof typeof colors] || "bg-gray-500"
+    return colors[category as keyof typeof colors] || "from-slate-600 to-slate-700"
+  }
+
+  const getCategoryBg = (category: string) => {
+    const colors = {
+      "Mobile & Backend Development": "bg-indigo-50 dark:bg-slate-800",
+      "Full-Stack Web Platform": "bg-cyan-50 dark:bg-slate-800",
+      "Web Development": "bg-blue-50 dark:bg-slate-800",
+      "Enterprise Application": "bg-emerald-50 dark:bg-slate-800",
+      "Desktop Application": "bg-purple-50 dark:bg-slate-800",
+      "Network Infrastructure": "bg-amber-50 dark:bg-slate-800",
+      "Network Security": "bg-red-50 dark:bg-slate-800"
+    }
+    return colors[category as keyof typeof colors] || "bg-slate-50 dark:bg-slate-800"
   }
 
   return (
-    <section id="projects" className="py-24 bg-gray-50/70 dark:bg-gray-900/70 backdrop-blur-sm w-full">
+    <section id="projects" className="py-24 bg-gradient-to-br from-slate-50/90 via-white/80 to-slate-100/90 dark:from-slate-900/90 dark:via-slate-800/80 dark:to-slate-900/90 backdrop-blur-sm w-full">
       <div className="w-full px-6 lg:px-12 xl:px-16">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, type: "spring", damping: 20 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-4xl md:text-5xl font-bold font-display text-primary-900 dark:text-white mb-6 ${isRTL ? 'text-right' : 'text-center'}`}>
+          <h2 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 dark:from-slate-200 dark:via-slate-100 dark:to-slate-200 bg-clip-text text-transparent mb-6 ${isRTL ? 'text-right' : 'text-center'}`}>
             {t('projects.title')}
           </h2>
-          <div className="w-20 h-1 bg-primary-600 mx-auto mb-8"></div>
-          <p className={`text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto ${isRTL ? 'text-right' : 'text-center'}`}>
+          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-700 mx-auto mb-8 rounded-full"></div>
+          <p className={`text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed ${isRTL ? 'text-right' : 'text-center'}`}>
             {t('projects.subtitle')}
           </p>
         </motion.div>
@@ -217,50 +230,65 @@ const Projects = () => {
             return (
               <motion.div
                 key={project.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                transition={{ duration: 0.6, delay: index * 0.1, type: "spring", damping: 20 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-600 group backdrop-blur-sm"
+                className={`${getCategoryBg(project.category)} rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-200 dark:border-slate-600 group backdrop-blur-sm`}
               >
                 {/* Project Header */}
-                <div className="p-6 border-b border-gray-200 dark:border-gray-600 bg-gradient-to-r from-gray-50/50 to-white dark:from-gray-700/50 dark:to-gray-800">
+                <div className="p-6 border-b border-slate-200 dark:border-slate-600 bg-gradient-to-r from-slate-50/30 to-transparent dark:from-slate-700/30 dark:to-transparent">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center">
-                      <div className={`${getCategoryColor(project.category)} p-3 rounded-xl mr-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                      <motion.div 
+                        className={`bg-gradient-to-br ${getCategoryColor(project.category)} p-3 rounded-xl mr-4 shadow-lg`}
+                        whileHover={{ scale: 1.1, rotate: 5 }}
+                        transition={{ type: "spring", damping: 15 }}
+                      >
                         <IconComponent className="w-6 h-6 text-white" />
-                      </div>
+                      </motion.div>
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-800 dark:text-white font-display mb-2">
+                        <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-2">
                           {project.title}
                         </h3>
-                        <span className="text-sm font-semibold text-primary-700 dark:text-primary-300 bg-primary-100 dark:bg-primary-900/40 px-3 py-1.5 rounded-full border border-primary-200 dark:border-primary-700">
+                        <motion.span 
+                          className="text-sm font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-600"
+                          whileHover={{ scale: 1.05 }}
+                          transition={{ type: "spring", damping: 15 }}
+                        >
                           {project.category}
-                        </span>
+                        </motion.span>
                       </div>
                     </div>
                     <div className="flex gap-2">
                       {project.githubUrl && (
-                        <a
+                        <motion.a
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                          className="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700"
+                          whileHover={{ scale: 1.1, y: -2 }}
+                          whileTap={{ scale: 0.95 }}
+                          transition={{ type: "spring", damping: 15 }}
                           title="View Source Code"
                         >
                           <Github className="w-5 h-5" />
-                        </a>
+                        </motion.a>
                       )}
                       {project.liveUrl && (
-                        <a
+                        <motion.a
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                          
+                          className="p-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700"
+                          whileHover={{ scale: 1.1, y: -2 }}
+                          whileTap={{ scale: 0.95 }}
+                          transition={{ type: "spring", damping: 15 }}
+                          title="View Live Demo"
                         >
                           <ExternalLink className="w-5 h-5" />
-                        </a>
+                        </motion.a>
                       )}
                     </div>
                   </div>

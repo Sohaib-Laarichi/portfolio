@@ -1,3 +1,7 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
@@ -14,8 +18,18 @@ import ScrollToTop from '@/components/ScrollToTop'
 import ScrollProgressBar from '@/components/ScrollProgressBar'
 import SectionBackground from '@/components/SectionBackground'
 import ParallaxElements from '@/components/ParallaxElements'
+import LoadingScreen from '@/components/LoadingScreen'
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false)
+  }
+
+  if (isLoading) {
+    return <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+  }
   return (
     <main className="w-full min-h-screen relative overflow-x-hidden">
       {/* Dynamic Theme Background */}

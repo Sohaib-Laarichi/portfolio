@@ -69,20 +69,20 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="py-24 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm w-full">
+    <section id="experience" className="py-24 bg-gradient-to-br from-white/90 via-slate-50/70 to-white/90 dark:from-slate-800/90 dark:via-slate-700/70 dark:to-slate-800/90 backdrop-blur-sm w-full">
       <div className="w-full px-6 lg:px-12 xl:px-16">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, type: "spring", damping: 20 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className={`text-4xl md:text-5xl font-bold font-display text-gray-800 dark:text-white mb-6 ${isRTL ? 'text-right' : 'text-center'}`}>
+          <h2 className={`text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-800 via-slate-600 to-slate-800 dark:from-slate-200 dark:via-slate-100 dark:to-slate-200 bg-clip-text text-transparent mb-6 ${isRTL ? 'text-right' : 'text-center'}`}>
             {t('experience.title')}
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
-          <p className={`text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto ${isRTL ? 'text-right' : 'text-center'}`}>
+          <div className="w-20 h-1 bg-gradient-to-r from-slate-600 to-slate-700 mx-auto mb-8 rounded-full"></div>
+          <p className={`text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed ${isRTL ? 'text-right' : 'text-center'}`}>
             {t('experience.subtitle')}
           </p>
         </motion.div>
@@ -92,58 +92,94 @@ const Experience = () => {
           {getExperiences().map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50, scale: 0.95 }}
+              whileInView={{ opacity: 1, x: 0, scale: 1 }}
+              whileHover={{ scale: 1.02, y: -5 }}
+              transition={{ duration: 0.8, delay: index * 0.2, type: "spring", damping: 20 }}
               viewport={{ once: true }}
               className="relative mb-12"
             >
               <div className="flex flex-col lg:flex-row items-start lg:items-center">
                 {/* Timeline connector */}
                 <div className="hidden lg:flex flex-col items-center mr-8">
-                  <div className="w-4 h-4 bg-primary-600 dark:bg-primary-500 rounded-full mb-2"></div>
+                  <motion.div 
+                    className="w-4 h-4 bg-gradient-to-br from-slate-600 to-slate-700 rounded-full mb-2 shadow-lg"
+                    whileHover={{ scale: 1.3, rotate: 180 }}
+                    transition={{ type: "spring", damping: 15 }}
+                  ></motion.div>
                   {index < getExperiences().length - 1 && (
-                    <div className="w-0.5 h-32 bg-primary-200 dark:bg-primary-700"></div>
+                    <motion.div 
+                      className="w-0.5 h-32 bg-gradient-to-b from-slate-300 to-slate-400 dark:from-slate-600 dark:to-slate-700 rounded-full"
+                      initial={{ height: 0 }}
+                      whileInView={{ height: 128 }}
+                      transition={{ duration: 1, delay: index * 0.3 }}
+                      viewport={{ once: true }}
+                    ></motion.div>
                   )}
                 </div>
 
                 {/* Content Card */}
-                <div className={`bg-gray-50 dark:bg-gray-700/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex-1 border border-gray-100 dark:border-gray-600 ${isRTL ? 'text-right' : ''}`}>
+                <div className={`bg-gradient-to-br from-slate-50/80 to-white/90 dark:from-slate-800/80 dark:to-slate-700/90 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500 flex-1 border border-slate-200 dark:border-slate-600 backdrop-blur-sm ${isRTL ? 'text-right' : ''}`}>
                   <div className={`flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 ${isRTL ? 'sm:flex-row-reverse' : ''}`}>
                     <div className={`flex items-center mb-2 sm:mb-0 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                      <Briefcase className={`w-5 h-5 text-blue-600 dark:text-blue-400 ${isRTL ? 'ml-2' : 'mr-2'}`} />
-                      <h3 className="text-xl font-bold text-gray-800 dark:text-white font-display">
+                      <motion.div
+                        whileHover={{ rotate: 15, scale: 1.1 }}
+                        transition={{ type: "spring", damping: 15 }}
+                      >
+                        <Briefcase className={`w-5 h-5 text-slate-700 dark:text-slate-300 ${isRTL ? 'ml-2' : 'mr-2'}`} />
+                      </motion.div>
+                      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200">
                         {exp.title}
                       </h3>
                     </div>
-                    <div className={`flex items-center text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-3 py-1 rounded-full text-sm font-medium ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <motion.div 
+                      className={`flex items-center text-slate-700 dark:text-slate-300 bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-600 px-4 py-2 rounded-xl text-sm font-medium shadow-md ${isRTL ? 'flex-row-reverse' : ''}`}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      transition={{ type: "spring", damping: 15 }}
+                    >
                       <Calendar className={`w-4 h-4 ${isRTL ? 'ml-1' : 'mr-1'}`} />
                       {exp.period}
-                    </div>
+                    </motion.div>
                   </div>
 
-                  <div className={`flex items-center mb-4 text-gray-600 dark:text-gray-400 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                    <span className={`font-semibold text-gray-800 dark:text-white ${isRTL ? 'ml-2' : 'mr-2'}`}>{exp.company}</span>
+                  <div className={`flex items-center mb-4 text-slate-600 dark:text-slate-400 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <span className={`font-semibold text-slate-800 dark:text-slate-200 ${isRTL ? 'ml-2' : 'mr-2'}`}>{exp.company}</span>
                     <MapPin className={`w-4 h-4 ${isRTL ? 'ml-1' : 'mr-1'}`} />
                     <span>{exp.location}</span>
                   </div>
 
-                  <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                  <p className="text-slate-700 dark:text-slate-300 mb-4 leading-relaxed">
                     {exp.description}
                   </p>
 
                   {exp.achievements && exp.achievements.length > 0 && (
-                    <div>
-                      <h4 className="font-semibold text-gray-800 dark:text-white mb-3">Key Achievements:</h4>
-                      <ul className="space-y-2">
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                      viewport={{ once: true }}
+                    >
+                      <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-3">Key Achievements:</h4>
+                      <ul className="space-y-3">
                         {exp.achievements.map((achievement: string, achievementIndex: number) => (
-                          <li key={achievementIndex} className="flex items-start">
-                            <div className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                            <span className="text-gray-600 dark:text-gray-300 text-sm">{achievement}</span>
-                          </li>
+                          <motion.li 
+                            key={achievementIndex} 
+                            className="flex items-start group cursor-pointer"
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            whileHover={{ x: 5, scale: 1.02 }}
+                            transition={{ duration: 0.3, delay: achievementIndex * 0.1, type: "spring", damping: 20 }}
+                            viewport={{ once: true }}
+                          >
+                            <motion.div 
+                              className="w-2 h-2 bg-gradient-to-br from-slate-600 to-slate-700 rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-150"
+                              transition={{ type: "spring", damping: 15 }}
+                            ></motion.div>
+                            <span className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors">{achievement}</span>
+                          </motion.li>
                         ))}
                       </ul>
-                    </div>
+                    </motion.div>
                   )}
                 </div>
               </div>
