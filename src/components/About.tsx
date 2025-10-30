@@ -58,28 +58,36 @@ const About = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
   const education = [
     {
-      period: "2024-2026 (In Progress)",
-      degree: "Computer Engineering Degree (MIAGE Option)",
+      period: "2024-2026 (En cours)",
+      degree: "Diplôme d'Ingénieur Informatique - Option MIAGE",
       institution: "EMSI, Marrakech",
       icon: GraduationCap,
       color: "from-slate-600 to-slate-700",
       bgColor: "bg-slate-50 dark:bg-slate-800"
     },
     {
-      period: "2021-2023",
-      degree: "Bachelor's Degree in Computer Science & BTS in IT Systems and Networks",
-      institution: "Private University of Marrakech (UPM)",
+      period: "2023-2024",
+      degree: "Licence en Informatique",
+      institution: "Université Privée de Marrakech (UPM)",
       icon: School,
       color: "from-slate-700 to-slate-800",
       bgColor: "bg-slate-100 dark:bg-slate-700"
     },
     {
-      period: "2020-2021",
-      degree: "Baccalaureate in Electrical Science and Technologies",
-      institution: "Mohamed VI High School, Marrakech",
+      period: "2021-2023",
+      degree: "BTS en Systèmes et Réseaux Informatiques",
+      institution: "Lycée Qualifiant Mohamed V, Essaouira",
+      icon: School,
+      color: "from-slate-600 to-slate-700",
+      bgColor: "bg-slate-50 dark:bg-slate-800"
+    },
+    {
+      period: "2021",
+      degree: "Baccalauréat - Sciences et Technologies Électriques",
+      institution: "Lycée Qualifiant Mohamed VI, Marrakech",
       icon: Building,
       color: "from-slate-500 to-slate-600",
-      bgColor: "bg-slate-50 dark:bg-slate-800"
+      bgColor: "bg-slate-100 dark:bg-slate-700"
     }
   ]
 

@@ -24,7 +24,7 @@
       "Développeur Java/Spring Boot",
       "Architecte Solutions Réseau"
     ],
-    "description": "Étudiant en Génie Informatique à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Compétences en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche une opportunité professionnelle pour appliquer et développer mes compétences dans la conception et le déploiement de solutions réseau et logicielles.",
+    "description": "Étudiant en dernière année du cycle d'Ingénierie (option MIAGE) à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Compétences en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche une opportunité de stage dès février 2026 pour appliquer et développer mes compétences dans la conception et le déploiement de solutions réseau et logicielles.",
     "viewProjects": "Voir Mes Projets",
     "contactMe": "Me Contacter",
     "scrollDown": "Faire Défiler"
@@ -34,14 +34,36 @@
     "subtitle": "Apprenez à me connaître",
     "profile": {
       "title": "Profil Professionnel",
-      "description": "Étudiant en génie informatique à l'EMSI, spécialisé dans l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques tout en développant mes compétences en sécurité réseau et administration système."
+      "description": "Étudiant en dernière année du cycle d'Ingénierie (option MIAGE) à l'EMSI, spécialisé dans l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques innovantes tout en développant mes compétences en sécurité réseau et administration système. Je recherche activement un stage dès février 2026."
     },
     "education": {
       "title": "Formation & Éducation",
-      "degree": "Étudiant en Génie Informatique",
-      "school": "EMSI - École Marocaine des Sciences de l'Ingénieur",
-      "period": "2023 - Présent",
-      "certifications": "Certifications Professionnelles"
+      "degree": "Diplôme d'Ingénieur Informatique - Option MIAGE",
+      "school": "EMSI, Marrakech",
+      "period": "2024-2026 (En cours)",
+      "certifications": "Certifications Professionnelles",
+      "formations": [
+        {
+          "period": "2024-2026 (En cours)",
+          "degree": "Diplôme d'Ingénieur Informatique - Option MIAGE",
+          "institution": "EMSI, Marrakech"
+        },
+        {
+          "period": "2023-2024",
+          "degree": "Licence en Informatique",
+          "institution": "Université Privée de Marrakech (UPM)"
+        },
+        {
+          "period": "2021-2023",
+          "degree": "BTS en Systèmes et Réseaux Informatiques",
+          "institution": "Lycée Qualifiant Mohamed V, Essaouira"
+        },
+        {
+          "period": "2021",
+          "degree": "Baccalauréat - Sciences et Technologies Électriques",
+          "institution": "Lycée Qualifiant Mohamed VI, Marrakech"
+        }
+      ]
     },
     "softSkills": {
       "title": "Compétences Humaines",
@@ -109,44 +131,44 @@
     "subtitle": "Mon parcours technologique",
     "jobs": [
       {
-        "period": "Été 2025",
-        "title": "Stagiaire d'Été",
+        "period": "Juillet - Août 2025",
+        "title": "Stage d'Été",
         "company": "HA Groupe",
         "location": "Marrakech",
-        "description": "Développement de la plateforme Mkhademia - une plateforme web complète pour les freelancers marocains. Direction de l'implémentation technique avec des technologies web modernes et gestion du cycle de développement complet.",
+        "description": "Développement de bout en bout de la plateforme Mkhademia - une plateforme web complète pour freelancers marocains. Conception et implémentation de l'architecture full-stack avec des technologies modernes.",
         "achievements": [
-          "Construction d'application web full-stack avec Node.js et Next.js",
-          "Implémentation de l'authentification utilisateur et gestion des profils",
-          "Conception et développement de l'architecture base de données MongoDB",
-          "Création d'interface utilisateur responsive avec patterns de design modernes"
+          "Développement complet de la plateforme web Mkhademia en utilisant Node.js, Next.js et MongoDB",
+          "Conception et implémentation de l'architecture base de données MongoDB pour la gestion des profils freelances",
+          "Création d'une interface utilisateur responsive avec Next.js 14 et design moderne",
+          "Intégration de fonctionnalités de recherche et filtrage par ville marocaine"
         ],
         "type": "stage"
       },
       {
         "period": "Mai - Juin 2023",
-        "title": "Technicien IT (Stagiaire)",
+        "title": "Technicien Informatique (Stage)",
         "company": "Phone Dreams",
         "location": "Marrakech",
-        "description": "Expérience pratique en support IT et gestion d'infrastructure. Responsable des réparations matérielles, configuration serveur et dépannage technique.",
+        "description": "Support technique et gestion d'infrastructure informatique dans un environnement commercial. Responsable de la maintenance du parc informatique, configuration serveur et résolution d'incidents techniques.",
         "achievements": [
-          "Diagnostics matériels et réparations sur divers appareils",
-          "Configuration et maintenance de l'infrastructure serveur",
-          "Support technique aux utilisateurs finaux",
-          "Documentation des procédures de réparation et protocoles de maintenance"
+          "Configuration et maintenance de 3 serveurs internes Windows Server 2019",
+          "Diagnostic et réparation du parc informatique de ~50 postes de travail",
+          "Résolution de +80 tickets de support technique avec assistance directe aux utilisateurs",
+          "Documentation des procédures de maintenance et création de guides d'intervention"
         ],
         "type": "stage"
       },
       {
         "period": "Juin 2022",
-        "title": "Assistant Technicien (Stagiaire)",
+        "title": "Assistant Technicien (Stage)",
         "company": "CHU (Centre Hospitalier Universitaire)",
         "location": "Marrakech",
-        "description": "Travail sur des projets d'infrastructure réseau critiques en environnement hospitalier. Expérience avec équipements et protocoles réseau de niveau entreprise.",
+        "description": "Participation aux projets d'infrastructure réseau critiques en environnement hospitalier. Déploiement de solutions réseau de niveau entreprise avec équipements Cisco et infrastructure fibre optique.",
         "achievements": [
-          "Installation et maintenance de câblage structuré",
-          "Exécution d'épissage et tests de fibre optique",
-          "Configuration de commutateurs réseau et équipement de routage",
-          "Collaboration avec équipe IT pour optimisation réseau"
+          "Déploiement de l'infrastructure de câblage structuré et brassage de 12 baies réseau",
+          "Réalisation de soudures de fibre optique monomode avec tests de réflectométrie",
+          "Configuration de 8 commutateurs Cisco (niveau 2) : gestion des VLANs, sécurité des ports (Port Security) pour l'intégration de nouveaux équipements",
+          "Participation au déploiement réseau pour 2 nouveaux services médicaux"
         ],
         "type": "stage"
       }

@@ -1,4 +1,6 @@
-export default function sitemap() {
+import { MetadataRoute } from 'next'
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://sohaib-laarichi.netlify.app'
   
   return [

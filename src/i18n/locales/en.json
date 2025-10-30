@@ -24,7 +24,7 @@
       "Java/Spring Boot Developer",
       "Network Solutions Architect"
     ],
-    "description": "Computer Engineering student at EMSI, specializing in network architecture, security, and systems administration. Skilled in Java, Spring Boot, Next.js, and Cisco technologies. Seeking a professional opportunity to apply and develop my skills in designing and deploying network and software solutions.",
+    "description": "Final year Computer Engineering student (MIAGE option) at EMSI, specializing in network architecture, security, and systems administration. Skilled in Java, Spring Boot, Next.js, and Cisco technologies. Actively seeking an internship opportunity starting February 2026 to apply and develop my skills in designing and deploying network and software solutions.",
     "viewProjects": "View My Projects",
     "contactMe": "Contact Me",
     "scrollDown": "Scroll Down"
@@ -34,14 +34,36 @@
     "subtitle": "Get to know me better",
     "profile": {
       "title": "Professional Profile",
-      "description": "Pursuing my Computer Engineering degree at EMSI, specializing in network infrastructure and cybersecurity. My goal is to contribute to technological solutions while developing my skills in network security and systems administration."
+      "description": "Final year Computer Engineering student (MIAGE option) at EMSI, specializing in network infrastructure and cybersecurity. My goal is to contribute to innovative technological solutions while developing my skills in network security and systems administration. Actively seeking an internship starting February 2026."
     },
     "education": {
       "title": "Education & Training",
-      "degree": "Computer Engineering Student",
-      "school": "EMSI - École Marocaine des Sciences de l'Ingénieur",
-      "period": "2023 - Present",
-      "certifications": "Professional Certifications"
+      "degree": "Computer Engineering Degree - MIAGE Option",
+      "school": "EMSI, Marrakech",
+      "period": "2024-2026 (In Progress)",
+      "certifications": "Professional Certifications",
+      "formations": [
+        {
+          "period": "2024-2026 (In Progress)",
+          "degree": "Computer Engineering Degree - MIAGE Option",
+          "institution": "EMSI, Marrakech"
+        },
+        {
+          "period": "2023-2024",
+          "degree": "Bachelor's Degree in Computer Science",
+          "institution": "Private University of Marrakech (UPM)"
+        },
+        {
+          "period": "2021-2023",
+          "degree": "BTS in IT Systems and Networks",
+          "institution": "Mohamed V High School, Essaouira"
+        },
+        {
+          "period": "2021",
+          "degree": "Baccalaureate - Electrical Science and Technologies",
+          "institution": "Mohamed VI High School, Marrakech"
+        }
+      ]
     },
     "softSkills": {
       "title": "Soft Skills",
@@ -111,63 +133,45 @@
     "years": "years",
     "jobs": [
       {
-        "title": "Network Administrator Intern",
-        "company": "TechCorp Solutions",
+        "title": "Summer Intern",
+        "company": "HA Groupe",
         "location": "Marrakech, Morocco",
-        "period": "June 2024 - August 2024",
+        "period": "July - August 2025",
         "type": "Internship",
-        "description": "Configured and maintained network infrastructure, implemented security protocols, and provided technical support for enterprise systems.",
+        "description": "End-to-end development of the Mkhademia platform - a comprehensive web platform for Moroccan freelancers. Full-stack architecture design and implementation with modern technologies.",
         "achievements": [
-          "Configured enterprise-level network infrastructure serving 200+ users",
-          "Implemented security protocols reducing network vulnerabilities by 40%",
-          "Provided technical support with 95% first-call resolution rate",
-          "Automated network monitoring processes saving 10 hours weekly",
-          "Collaborated with cross-functional teams on system upgrades"
+          "Complete development of Mkhademia web platform using Node.js, Next.js and MongoDB",
+          "Designed and implemented MongoDB database architecture for freelance profile management",
+          "Created responsive user interface with Next.js 14 and modern design patterns",
+          "Integrated search and filtering features by Moroccan cities"
         ]
       },
       {
-        "title": "IT Support Specialist", 
-        "company": "Digital Services Inc.",
-        "location": "Casablanca, Morocco",
-        "period": "January 2024 - May 2024",
-        "type": "Part-time",
-        "description": "Provided comprehensive technical support, troubleshooted hardware and software issues, and assisted in system deployments.",
-        "achievements": [
-          "Provided technical support to 150+ users across multiple departments",
-          "Troubleshooted hardware and software issues with 90% success rate",
-          "Assisted in system deployments and migrations",
-          "Reduced average ticket resolution time by 30%",
-          "Created technical documentation for common issues"
-        ]
-      },
-      {
-        "title": "Junior Developer",
-        "company": "WebDev Agency",
-        "location": "Remote",
-        "period": "September 2023 - December 2023",
-        "type": "Freelance", 
-        "description": "Developed web applications using modern frameworks, collaborated with design teams, and maintained code repositories.",
-        "achievements": [
-          "Developed 5+ responsive web applications using React and Next.js",
-          "Collaborated with design teams to implement pixel-perfect UIs",
-          "Maintained code repositories with Git best practices",
-          "Improved application performance by 25% through optimization",
-          "Delivered projects on time with 100% client satisfaction"
-        ]
-      },
-      {
-        "title": "Network Technician",
-        "company": "ConnectNet Services",
+        "title": "IT Technician (Intern)",
+        "company": "Phone Dreams",
         "location": "Marrakech, Morocco",
-        "period": "June 2023 - August 2023",
-        "type": "Summer Internship",
-        "description": "Installed and maintained network equipment, performed troubleshooting, and supported network operations.",
+        "period": "May - June 2023",
+        "type": "Internship",
+        "description": "Technical support and IT infrastructure management in a commercial environment. Responsible for maintaining the IT fleet, server configuration, and incident resolution.",
         "achievements": [
-          "Installed network equipment for 50+ client locations",
-          "Performed network troubleshooting with 95% resolution rate",
-          "Supported daily network operations and maintenance",
-          "Reduced equipment downtime by 20% through proactive monitoring",
-          "Trained in fiber optic installation and testing"
+          "Configured and maintained 3 internal Windows Server 2019 servers",
+          "Diagnosed and repaired IT fleet of ~50 workstations",
+          "Resolved 80+ technical support tickets with direct user assistance",
+          "Documented maintenance procedures and created intervention guides"
+        ]
+      },
+      {
+        "title": "Technician Assistant (Intern)",
+        "company": "CHU (University Hospital Center)",
+        "location": "Marrakech, Morocco",
+        "period": "June 2022",
+        "type": "Internship",
+        "description": "Participated in critical network infrastructure projects in healthcare environment. Deployment of enterprise-level network solutions with Cisco equipment and fiber optic infrastructure.",
+        "achievements": [
+          "Deployed structured cabling infrastructure and patched 12 network bays",
+          "Performed single-mode fiber optic splicing with reflectometry testing",
+          "Configured 8 Cisco switches (Layer 2): VLAN management, Port Security for new equipment integration",
+          "Participated in network deployment for 2 new medical departments"
         ]
       }
     ]

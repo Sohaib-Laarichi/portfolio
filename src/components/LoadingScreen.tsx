@@ -28,7 +28,8 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
       setProgress(prev => {
         if (prev >= 100) {
           clearInterval(timer)
-          setTimeout(onLoadingComplete, 800)
+          // Délai réduit pour transition plus rapide
+          setTimeout(onLoadingComplete, 500)
           return 100
         }
         
@@ -50,8 +51,15 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0, y: -50 }}
-      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+      exit={{ 
+        opacity: 0,
+        scale: 1.05,
+        filter: "blur(10px)"
+      }}
+      transition={{ 
+        duration: 0.8, 
+        ease: [0.43, 0.13, 0.23, 0.96] 
+      }}
       className="fixed inset-0 z-50 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 flex flex-col items-center justify-center overflow-hidden"
     >
       {/* Particules animées statiques en arrière-plan */}
@@ -264,28 +272,60 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
         </span>
       </motion.div>
 
-      {/* Message final avec transition */}
+      {/* Message final avec transition - Simplifié */}
       <AnimatePresence>
         {progress === 100 && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0 flex items-center justify-center bg-slate-900/90 backdrop-blur-sm"
+            exit={{ opacity: 0, scale: 1.1 }}
+            transition={{ duration: 0.4 }}
+            className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-900/95 via-slate-800/95 to-blue-900/95 backdrop-blur-md"
           >
             <div className="text-center">
               <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 1, ease: "easeInOut" }}
-                className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ 
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 15
+                }}
+                className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 flex items-center justify-center shadow-2xl"
               >
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+                <motion.svg 
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="w-10 h-10 text-white" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                >
+                  <motion.path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    d="M5 13l4 4L19 7" 
+                  />
+                </motion.svg>
               </motion.div>
-              <h3 className="text-2xl font-light text-white mb-2">Portfolio Prêt</h3>
-              <p className="text-blue-200/80 text-sm">Bienvenue dans mon univers</p>
+              <motion.h3 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="text-3xl font-light text-white mb-2"
+              >
+                Prêt !
+              </motion.h3>
+              <motion.p 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                className="text-blue-200/80 text-sm"
+              >
+                Chargement terminé
+              </motion.p>
             </div>
           </motion.div>
         )}

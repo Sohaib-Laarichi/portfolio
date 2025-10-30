@@ -11,16 +11,16 @@ const Experience = () => {
     const jobs = t('experience.jobs', { returnObjects: true }) as any[]
     return jobs.length > 0 ? jobs : [
       {
-        period: "Summer 2025",
+        period: "July - August 2025",
         title: "Summer Intern",
         company: "HA Groupe",
         location: "Marrakech",
-        description: "Developed the Mkhademia platform - a comprehensive web platform for Moroccan freelancers. Led the technical implementation using modern web technologies and managed the complete development lifecycle.",
+        description: "End-to-end development of the Mkhademia platform - a comprehensive web platform for Moroccan freelancers. Full-stack architecture design and implementation with modern technologies.",
         achievements: [
-          "Built full-stack web application using Node.js and Next.js",
-          "Implemented user authentication and profile management",
-          "Designed and developed MongoDB database architecture",
-          "Created responsive user interface with modern design patterns"
+          "Complete development of Mkhademia web platform using Node.js, Next.js and MongoDB",
+          "Designed and implemented MongoDB database architecture for freelance profile management",
+          "Created responsive user interface with Next.js 14 and modern design patterns",
+          "Integrated search and filtering features by Moroccan cities"
         ],
         type: "internship"
       },
@@ -29,12 +29,12 @@ const Experience = () => {
         title: "IT Technician (Intern)",
         company: "Phone Dreams",
         location: "Marrakech",
-        description: "Gained hands-on experience in IT support and infrastructure management. Responsible for hardware repairs, server configuration, and technical troubleshooting.",
+        description: "Technical support and IT infrastructure management in a commercial environment. Responsible for maintaining the IT fleet, server configuration, and incident resolution.",
         achievements: [
-          "Performed hardware diagnostics and repairs on various devices",
-          "Configured and maintained server infrastructure",
-          "Provided technical support to end users",
-          "Documented repair procedures and maintenance protocols"
+          "Configured and maintained 3 internal Windows Server 2019 servers",
+          "Diagnosed and repaired IT fleet of ~50 workstations",
+          "Resolved 80+ technical support tickets with direct user assistance",
+          "Documented maintenance procedures and created intervention guides"
         ],
         type: "internship"
       },
@@ -43,12 +43,12 @@ const Experience = () => {
         title: "Technician Assistant (Intern)",
         company: "CHU (University Hospital Center)",
         location: "Marrakech",
-        description: "Worked on critical network infrastructure projects in a healthcare environment. Gained experience with enterprise-level networking equipment and protocols.",
+        description: "Participated in critical network infrastructure projects in healthcare environment. Deployment of enterprise-level network solutions with Cisco equipment and fiber optic infrastructure.",
         achievements: [
-          "Performed structured cabling installation and maintenance",
-          "Executed fiber optic splicing and testing procedures",
-          "Configured network switches and routing equipment",
-          "Assisted in network security implementation"
+          "Deployed structured cabling infrastructure and patched 12 network bays",
+          "Performed single-mode fiber optic splicing with reflectometry testing",
+          "Configured 8 Cisco switches (Layer 2): VLAN management, Port Security for new equipment integration",
+          "Participated in network deployment for 2 new medical departments"
         ],
         type: "internship"
       }
