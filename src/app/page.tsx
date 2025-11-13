@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
@@ -53,7 +53,7 @@ export default function Home() {
             <ParallaxElements />
             
             {/* Additional Background Animations */}
-            <div className="fixed inset-0 z-5">
+            <div className="fixed inset-0 z-[5] pointer-events-none">
               <AnimatedIcons />
             </div>
             

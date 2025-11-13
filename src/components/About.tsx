@@ -134,12 +134,11 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
         >
           <AnimatedCounter target={3} label={t('about.stats.experience') || "Années d'Expérience"} suffix="+" />
           <AnimatedCounter target={25} label={t('about.stats.projects') || "Projets Réalisés"} suffix="+" />
           <AnimatedCounter target={12} label={t('about.stats.technologies') || "Technologies Maîtrisées"} />
-          <AnimatedCounter target={98} label={t('about.stats.satisfaction') || "Taux de Satisfaction"} suffix="%" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">

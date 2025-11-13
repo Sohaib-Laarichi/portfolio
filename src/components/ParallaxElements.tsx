@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 const ParallaxElements = () => {
   const { scrollY } = useScroll()
@@ -18,12 +18,23 @@ const ParallaxElements = () => {
     setMounted(true)
   }, [])
 
+  const particleConfig = useMemo(() => {
+    if (!mounted) return []
+
+    return Array.from({ length: 15 }, () => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      duration: 3 + Math.random() * 2,
+      delay: Math.random() * 2,
+    }))
+  }, [mounted])
+
   if (!mounted) return null
 
   const isDark = resolvedTheme === 'dark'
 
   return (
-    <div className="fixed inset-0 z-1 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-[1] pointer-events-none overflow-hidden">
       {/* Layer 1 - Slow moving elements */}
       <motion.div
         style={{ y: y1 }}
@@ -96,24 +107,24 @@ const ParallaxElements = () => {
         className="absolute inset-0"
       >
         {/* Small particles */}
-        {[...Array(15)].map((_, i) => (
+        {particleConfig.map(({ left, top, duration, delay }, i) => (
           <motion.div
             key={`layer3-${i}`}
             className={`absolute w-2 h-2 rounded-full ${
               isDark ? 'bg-white/20' : 'bg-gray-600/15'
             }`}
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${left}%`,
+              top: `${top}%`,
             }}
             animate={{
               opacity: [0.2, 0.8, 0.2],
               scale: [0.5, 1, 0.5],
             }}
             transition={{
-              duration: 3 + Math.random() * 2,
+              duration,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay,
             }}
           />
         ))}

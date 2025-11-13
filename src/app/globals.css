@@ -8,12 +8,20 @@
   --foreground-rgb: 17, 24, 39;
   --background-start-rgb: 249, 250, 251;
   --background-end-rgb: 255, 255, 255;
+  --theme-accent: #2563eb;
+  --theme-surface: #f8fafc;
+  --theme-muted: #e2e8f0;
+  --theme-glow: rgba(59, 130, 246, 0.25);
 }
 
 .dark {
   --foreground-rgb: 243, 244, 246;
   --background-start-rgb: 17, 24, 39;
   --background-end-rgb: 31, 41, 55;
+  --theme-accent: #818cf8;
+  --theme-surface: #0f172a;
+  --theme-muted: #1e1b4b;
+  --theme-glow: rgba(129, 140, 248, 0.35);
 }
 
 * {

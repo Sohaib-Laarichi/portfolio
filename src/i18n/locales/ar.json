@@ -9,22 +9,24 @@
   },
   "hero": {
     "greeting": "مرحباً، أنا",
-    "name": "صهيب لعريشي",
+    "name": "لعريشي صهيب",
     "fullName": "صهيب لعريشي",
     "firstName": "صهيب",
     "lastName": "لعريشي",
     "variations": ["صهيب", "لعريشي", "صهيب لعريشي", "Sohaib", "Laarichi", "Sohaib Laarichi", "SohaibLaarichi"],
     "titles": [
-      "مهندس شبكات وبرمجيات",
-      "أخصائي أمن الشبكات",
-      "مطور تطبيقات متكامل",
-      "مدير أنظمة",
-      "مهندس DevOps",
-      "مهندس البنية التحتية السحابية",
-      "مطور جافا/سبرينغ بوت",
-      "مهندس حلول الشبكات"
+      "مطور ويب Fullstack",
+      "مهندس أنظمة وتطوير",
+      "أخصائي Java | Spring Boot",
+      "خبير React | Next.js | Node.js",
+      "مطور Backend & Frontend",
+      "مهندس تطبيقات الويب",
+      "مهندس Fullstack MIAGE",
+      "مطور Full-Stack Java/JS"
     ],
-    "description": "طالب في السنة الأخيرة من دورة الهندسة (خيار MIAGE) بـ EMSI، متخصص في هندسة الشبكات والأمان وإدارة الأنظمة. مهارات في جافا، سبرينغ بوت، Next.js، وتقنيات سيسكو. أبحث بنشاط عن فرصة تدريب ابتداءً من فبراير 2026 لتطبيق وتطوير مهاراتي في تصميم ونشر حلول الشبكات والبرمجيات.",
+    "description": "طالب مهندس في السنة الأخيرة من برنامج MIAGE بـ EMSI مراكش، أصمم تطبيقات ويب حديثة وعالية الأداء وآمنة باستخدام تقنيات مثل React، Next.js، Node.js، Java و Spring Boot. شغوف بالهندسة المعمارية للبرمجيات والأنظمة الموزعة وجودة الكود، أبحث عن تدريب نهاية الدراسات (6 أشهر من فبراير 2026) للمساهمة في مشاريع ويب مبتكرة.",
+    "skills": ["Fullstack", "Backend", "Frontend", "API REST", "Cloud"],
+    "location": "مراكش، المغرب",
     "viewProjects": "عرض مشاريعي",
     "contactMe": "تواصل معي",
     "scrollDown": "التمرير لأسفل"
@@ -79,54 +81,61 @@
         "التعلم المستمر والتطوير الذاتي",
         "الانتباه للتفاصيل الدقيقة"
       ]
+    },
+    "stats": {
+      "experience": "سنوات الخبرة",
+      "projects": "المشاريع المنجزة",
+      "technologies": "التقنيات المتقنة"
     }
   },
   "skills": {
-    "title": "المهارات التقنية",
-    "subtitle": "تقنياتي وأدواتي",
+    "title": "مهارات الويب Fullstack",
+    "subtitle": "التقنيات الحديثة التي أتقنها",
     "categories": {
-      "networking": "الشبكات وأمن المعلومات",
-      "programming": "البرمجة وتطوير البرمجيات",
+      "frontend": "Frontend",
+      "backend": "Backend",
       "databases": "قواعد البيانات",
-      "tools": "أدوات التطوير والإنتاجية"
+      "cloudops": "Cloud & Ops"
     },
+    "viewCertificate": "عرض الشهادة",
     "items": {
-      "networking": [
-        "تكوين أجهزة Cisco Router و Switch",
-        "إدارة Windows Server 2019/2022",
-        "إدارة Linux (Ubuntu, CentOS)",
-        "بروتوكولات TCP/IP, VLAN, OSPF",
-        "أمان الشبكة (Firewall, VPN)",
-        "VMware vSphere, Hyper-V",
-        "Cisco ISE (Identity Services Engine)"
+      "frontend": [
+        "React 18 & Next.js 14/15",
+        "JavaScript ES6+ & TypeScript",
+        "Tailwind CSS & Bootstrap 5",
+        "Framer Motion & React Query",
+        "HTML5/CSS3 & Responsive Design",
+        "Zustand & Context API"
       ],
-      "programming": [
-        "Java SE/EE",
-        "JavaScript ES6+",
-        "Node.js",
-        "HTML5/CSS3",
-        "TypeScript",
-        "Python 3.x",
-        "PowerShell"
+      "backend": [
+        "Java SE/EE & Spring Boot",
+        "Node.js & Express.js",
+        "REST APIs & JWT Authentication",
+        "Spring Security & Middleware",
+        "Microservices (أساسيات)",
+        "MVC Architecture"
       ],
       "databases": [
-        "MySQL 8.0",
-        "MongoDB",
+        "MongoDB & Mongoose",
+        "MySQL & PostgreSQL",
+        "JPA & Hibernate",
         "Microsoft SQL Server",
-        "Oracle Database 19c",
-        "PostgreSQL",
-        "Microsoft Azure",
-        "Amazon Web Services"
+        "Redis (Cache)",
+        "Database Design"
       ],
-      "tools": [
-        "Spring Boot, Spring Security",
-        "Express.js Framework",
-        "Next.js 14/15",
-        "React 18",
-        "Bootstrap 5",
-        "Tailwind CSS",
-        "Git, GitHub"
+      "cloudops": [
+        "Azure & AWS (أساسيات)",
+        "Docker & Containerization",
+        "Git & GitHub",
+        "CI/CD Pipeline",
+        "Postman & API Testing",
+        "Linux & Windows Server"
       ]
+    },
+    "coursera": {
+      "title": "Coursera",
+      "subtitle": "الشهادات الإلكترونية",
+      "viewCertificate": "عرض الشهادة"
     }
   },
   "experience": {

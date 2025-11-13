@@ -9,22 +9,24 @@
   },
   "hero": {
     "greeting": "Bonjour, je suis",
-    "name": "SOHAIB LAARICHI",
+    "name": "LAARICHI SOHAIB",
     "fullName": "Sohaib Laarichi",
     "firstName": "Sohaib",
     "lastName": "Laarichi",
     "variations": ["Sohaib", "Laarichi", "Sohaib Laarichi", "SohaibLaarichi", "SOHAIB", "LAARICHI", "SOHAIB LAARICHI"],
     "titles": [
-      "Ingénieur Réseau & Logiciel",
-      "Spécialiste Sécurité Réseau",
-      "Développeur Full-Stack",
-      "Administrateur Systèmes",
-      "Ingénieur DevOps", 
-      "Ingénieur Infrastructure Cloud",
-      "Développeur Java/Spring Boot",
-      "Architecte Solutions Réseau"
+      "Développeur Web Fullstack",
+      "Ingénieur Systèmes & Développement",
+      "Spécialiste Java | Spring Boot",
+      "Expert React | Next.js | Node.js",
+      "Développeur Backend & Frontend",
+      "Architecte Applications Web",
+      "Ingénieur Fullstack MIAGE",
+      "Développeur Full-Stack Java/JS"
     ],
-    "description": "Étudiant en dernière année du cycle d'Ingénierie (option MIAGE) à l'EMSI, spécialisé en architecture réseau, sécurité et administration système. Compétences en développement Java, Spring Boot, Next.js et technologies Cisco. Je recherche une opportunité de stage dès février 2026 pour appliquer et développer mes compétences dans la conception et le déploiement de solutions réseau et logicielles.",
+    "description": "Étudiant ingénieur en dernière année du cycle MIAGE à l'EMSI Marrakech, je conçois des applications web modernes, performantes et sécurisées en utilisant des technologies comme React, Next.js, Node.js, Java et Spring Boot. Passionné par l'architecture logicielle, les systèmes distribués et la qualité du code, je recherche un stage de fin d'études (6 mois dès février 2026) pour contribuer à des projets web innovants.",
+    "skills": ["Fullstack", "Backend", "Frontend", "API REST", "Cloud"],
+    "location": "Marrakech, Maroc",
     "viewProjects": "Voir Mes Projets",
     "contactMe": "Me Contacter",
     "scrollDown": "Faire Défiler"
@@ -34,7 +36,7 @@
     "subtitle": "Apprenez à me connaître",
     "profile": {
       "title": "Profil Professionnel",
-      "description": "Étudiant en dernière année du cycle d'Ingénierie (option MIAGE) à l'EMSI, spécialisé dans l'infrastructure réseau et la cybersécurité. Mon objectif est de contribuer à des solutions technologiques innovantes tout en développant mes compétences en sécurité réseau et administration système. Je recherche activement un stage dès février 2026."
+      "description": "Étudiant ingénieur MIAGE (EMSI Marrakech), passionné par le développement web Fullstack et l'engineering logiciel. J'ai un profil hybride combinant développement web (Java, Spring Boot, Node.js, React, Next.js, TypeScript), architecture backend & API REST, bases de données, et systèmes & réseau (Cisco, ADDS, Windows Server, Linux). Je conçois des applications web fiables, propres et orientées utilisateur. Je suis à la recherche de nouvelles opportunités pour consolider mon expertise et contribuer à des projets à impact."
     },
     "education": {
       "title": "Formation & Éducation",
@@ -75,185 +77,222 @@
         "Communication Technique",
         "Apprentissage Continu & Adaptabilité"
       ]
+    },
+    "stats": {
+      "experience": "Années d'Expérience",
+      "projects": "Projets Réalisés",
+      "technologies": "Technologies Maîtrisées"
     }
   },
   "skills": {
-    "title": "Compétences Techniques",
-    "subtitle": "Technologies et outils que j'utilise",
+    "title": "Compétences Web Fullstack",
+    "subtitle": "Technologies modernes que je maîtrise",
     "categories": {
-      "networking": "Réseau & Sécurité",
-      "programming": "Langages de Programmation", 
-      "databases": "Bases de Données & Cloud",
-      "tools": "Outils de Développement"
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de Données",
+      "cloudops": "Cloud & Ops"
     },
     "viewCertificate": "Voir Certificat",
     "items": {
-      "networking": [
-        "Configuration Cisco Router & Switch",
-        "Administration Windows Server 2019/2022",
-        "Administration Linux (Ubuntu, CentOS)",
-        "Protocoles TCP/IP, VLAN, OSPF",
-        "Sécurité réseau (Firewall, VPN)",
-        "VMware vSphere, Hyper-V",
-        "Cisco ISE (Identity Services Engine)"
+      "frontend": [
+        "React 18 & Next.js 14/15",
+        "JavaScript ES6+ & TypeScript",
+        "Tailwind CSS & Bootstrap 5",
+        "Framer Motion & React Query",
+        "HTML5/CSS3 & Responsive Design",
+        "Zustand & Context API"
       ],
-      "programming": [
-        "Java SE/EE",
-        "JavaScript ES6+",
-        "Node.js",
-        "HTML5/CSS3",
-        "TypeScript",
-        "Python 3.x",
-        "PowerShell"
+      "backend": [
+        "Java SE/EE & Spring Boot",
+        "Node.js & Express.js",
+        "API REST & JWT Authentication",
+        "Spring Security & Middleware",
+        "Microservices (bases)",
+        "Architecture MVC"
       ],
       "databases": [
-        "MySQL 8.0",
-        "MongoDB",
+        "MongoDB & Mongoose",
+        "MySQL & PostgreSQL",
+        "JPA & Hibernate",
         "Microsoft SQL Server",
-        "Oracle Database 19c",
-        "PostgreSQL",
-        "Microsoft Azure",
-        "Amazon Web Services"
+        "Redis (Cache)",
+        "Database Design"
       ],
-      "tools": [
-        "Spring Boot, Spring Security",
-        "Express.js Framework",
-        "Next.js 14/15",
-        "React 18",
-        "Bootstrap 5",
-        "Tailwind CSS",
-        "Git, GitHub"
+      "cloudops": [
+        "Azure & AWS (bases)",
+        "Docker & Conteneurisation",
+        "Git & GitHub",
+        "CI/CD Pipeline",
+        "Postman & API Testing",
+        "Linux & Windows Server"
       ]
+    },
+    "coursera": {
+      "title": "Coursera",
+      "subtitle": "Certifications en ligne",
+      "viewCertificate": "Voir Certificat"
     }
   },
   "experience": {
-    "title": "Expérience Professionnelle",
-    "subtitle": "Mon parcours technologique",
+    "title": "Expérience Web Fullstack",
+    "subtitle": "Mon parcours de développement",
     "jobs": [
       {
         "period": "Juillet - Août 2025",
-        "title": "Stage d'Été",
+        "title": "Stage Développeur Web Fullstack",
         "company": "HA Groupe",
-        "location": "Marrakech",
-        "description": "Développement de bout en bout de la plateforme Mkhademia - une plateforme web complète pour freelancers marocains. Conception et implémentation de l'architecture full-stack avec des technologies modernes.",
+        "location": "Beni Mellal, Maroc",
+        "project": "Mkhademia Platform (Fullstack Web)",
+        "technologies": "Node.js, Express.js, Next.js, MongoDB, Tailwind",
+        "description": "Développement complet d'une plateforme freelance marocaine (frontend + backend).",
         "achievements": [
-          "Développement complet de la plateforme web Mkhademia en utilisant Node.js, Next.js et MongoDB",
-          "Conception et implémentation de l'architecture base de données MongoDB pour la gestion des profils freelances",
-          "Création d'une interface utilisateur responsive avec Next.js 14 et design moderne",
-          "Intégration de fonctionnalités de recherche et filtrage par ville marocaine"
+          "Conception de l'architecture API REST (authentification JWT, rôles utilisateurs)",
+          "Création d'un tableau de bord administrateur et interfaces responsives",
+          "Implémentation de recherche filtrée optimisée pour villes marocaines",
+          "Développement full-stack avec Node.js/Express backend et Next.js frontend",
+          "Gestion complète des données avec MongoDB et optimisation des performances"
         ],
         "type": "stage"
       },
       {
-        "period": "Mai - Juin 2023",
-        "title": "Technicien Informatique (Stage)",
+        "period": "Juillet - Août 2024",
+        "title": "Stage Développeur Java",
         "company": "Phone Dreams",
-        "location": "Marrakech",
-        "description": "Support technique et gestion d'infrastructure informatique dans un environnement commercial. Responsable de la maintenance du parc informatique, configuration serveur et résolution d'incidents techniques.",
+        "location": "Marrakech, Maroc",
+        "project": "Application Desktop de gestion clients",
+        "technologies": "Java SE/EE, Swing, MySQL, JWT",
+        "description": "Application de gestion client avec authentification sécurisée.",
         "achievements": [
-          "Configuration et maintenance de 3 serveurs internes Windows Server 2019",
-          "Diagnostic et réparation du parc informatique de ~50 postes de travail",
-          "Résolution de +80 tickets de support technique avec assistance directe aux utilisateurs",
-          "Documentation des procédures de maintenance et création de guides d'intervention"
+          "CRUD complet + recherche avancée + import/export",
+          "Architecture MVC, traitement fichiers et reporting",
+          "Intégration base de données MySQL avec optimisation des requêtes",
+          "Interface utilisateur Java Swing moderne et responsive",
+          "Sécurisation avec JWT et gestion des sessions utilisateur"
+        ],
+        "type": "stage"
+      },
+      {
+        "period": "Juillet 2023",
+        "title": "Stage Systèmes & Infrastructure",
+        "company": "Phone Dreams",
+        "location": "Marrakech, Maroc",
+        "project": "Infrastructure ADDS",
+        "technologies": "Windows Server 2019, ADDS, GPO, PowerShell",
+        "description": "Configuration et déploiement d'Active Directory Domain Services.",
+        "achievements": [
+          "Configuration complète d'un domaine Active Directory",
+          "Mise en place des GPO pour la gestion centralisée",
+          "Scripts PowerShell d'automatisation des tâches administratives",
+          "Documentation technique et procédures de maintenance",
+          "Formation utilisateurs et support technique niveau 2"
         ],
         "type": "stage"
       },
       {
         "period": "Juin 2022",
-        "title": "Assistant Technicien (Stage)",
-        "company": "CHU (Centre Hospitalier Universitaire)",
-        "location": "Marrakech",
-        "description": "Participation aux projets d'infrastructure réseau critiques en environnement hospitalier. Déploiement de solutions réseau de niveau entreprise avec équipements Cisco et infrastructure fibre optique.",
+        "title": "Stage Fini Réseau",
+        "company": "CHU Hassan II",
+        "location": "Fès, Maroc",
+        "project": "Réseau VLAN sécurisé",
+        "technologies": "Cisco Router, Switch, DHCP, DNS",
+        "description": "Support infrastructure réseau hospitalière et maintenance équipements.",
         "achievements": [
-          "Déploiement de l'infrastructure de câblage structuré et brassage de 12 baies réseau",
-          "Réalisation de soudures de fibre optique monomode avec tests de réflectométrie",
-          "Configuration de 8 commutateurs Cisco (niveau 2) : gestion des VLANs, sécurité des ports (Port Security) pour l'intégration de nouveaux équipements",
-          "Participation au déploiement réseau pour 2 nouveaux services médicaux"
+          "Maintenance équipements réseau pour +50 sites hospitaliers",
+          "Troubleshooting réseau avec taux de résolution 90%",
+          "Support opérations quotidiennes et maintenance préventive",
+          "Assistance installation et tests câbles fibre optique",
+          "Documentation configurations réseau et procédures techniques"
         ],
         "type": "stage"
       }
     ]
   },
   "projects": {
-    "title": "Projets en Vedette",
-    "subtitle": "Quelques-uns de mes travaux récents",
+    "title": "Projets Web en Vedette",
+    "subtitle": "Applications fullstack modernes",
     "viewProject": "Voir Projet",
     "viewCode": "Voir Code",
     "viewDemo": "Voir Démo",
     "items": {
-      "geobus": {
-        "title": "GeoBus - Système de Tracking de Bus",
-        "description": "Un système complet de suivi de bus pour Marrakech, Maroc, composé d'un backend Spring Boot et d'une application mobile Android. Le système fournit un suivi en temps réel des bus, un localisateur d'arrêts les plus proches, et une estimation de l'heure d'arrivée pour améliorer l'expérience des transports en commun.",
-        "category": "Développement Mobile & Backend",
+      "mkhademia": {
+        "title": "Mkhademia.ma — Fullstack Web Platform",
+        "description": "Plateforme moderne pour freelances marocains : recherche avancée, localisation, multi-langues, interface moderne.",
+        "category": "Plateforme Web Fullstack",
+        "technologies": "Node.js, Express, MongoDB, Next.js, TypeScript, Tailwind, Cloudinary",
         "features": [
-          "Suivi des bus en temps réel sur cartes interactives",
-          "Découverte des arrêts de bus les plus proches basée sur la localisation",
-          "Estimation du temps de marche et d'arrivée des bus",
-          "Authentification utilisateur avec tokens JWT",
-          "API RESTful avec backend Spring Boot",
-          "Application Android avec architecture MVVM",
-          "Base de données MySQL pour les données d'arrêts et itinéraires",
-          "Intégration Google Maps pour la visualisation"
+          "Architecture API REST complète avec authentification JWT",
+          "Interface utilisateur Next.js 14 responsive et moderne",
+          "Base de données MongoDB optimisée pour freelances",
+          "Support multilingue (Français, Arabe, Anglais) avec RTL",
+          "Recherche géographique par villes marocaines",
+          "Dashboard administrateur avec analytics",
+          "Intégration WhatsApp et notifications temps réel",
+          "Upload d'images avec Cloudinary et optimisation"
         ]
       },
-      "mkhedmin": {
-        "title": "Mkhedmin.ma - Plateforme Freelance Marocaine",
-        "description": "Une plateforme freelance spécialement conçue pour le marché marocain, offrant des fonctionnalités localisées comme des filtres par ville marocaine, support RTL pour l'arabe, et intégration WhatsApp. La plateforme connecte freelancers et clients avec des outils de communication avancés.",
-        "category": "Plateforme Web Full-Stack",
+      "geobus": {
+        "title": "GeoBus — Real-Time Bus Tracking",
+        "description": "Suivi des bus en temps réel — application Android + backend Spring Boot avec Google Maps API.",
+        "category": "Mobile & Backend",
+        "technologies": "Spring Boot, MySQL, Kotlin, Google Maps API",
         "features": [
-          "Interface utilisateur moderne avec Next.js 14",
-          "Backend robuste Node.js avec Express",
-          "Base de données MongoDB pour flexibilité",
-          "Support multilingue (Français, Arabe, Anglais)",
-          "Système d'authentification sécurisé",
-          "Filtres géographiques spécifiques au Maroc",
-          "Intégration WhatsApp pour communication",
-          "Dashboard admin pour gestion de la plateforme"
+          "API RESTful Spring Boot avec documentation Swagger",
+          "Suivi GPS en temps réel et géolocalisation",
+          "Application mobile Android architecture MVVM",
+          "Base de données MySQL optimisée pour géolocalisation",
+          "Authentification JWT et gestion des sessions",
+          "Intégration Google Maps pour visualisation",
+          "Estimation temps d'arrivée et itinéraires optimaux",
+          "Push notifications et alertes temps réel"
         ]
       },
       "pharmalive": {
-        "title": "PharmaLive - Gestion de Pharmacie",
-        "description": "Système de gestion complet pour pharmacies développé en Java EE avec interface Bootstrap. Gère l'inventaire, les prescriptions, les ventes et fournit des analyses détaillées pour optimiser les opérations pharmaceutiques.",
-        "category": "Application d'Entreprise",
+        "title": "PharmaLive — Enterprise Web Application",
+        "description": "Gestion de stock, ventes, prescriptions et tableau de bord pour pharmacies.",
+        "category": "Application Web Entreprise",
+        "technologies": "Spring Boot, PostgreSQL, JSP, JDBC",
         "features": [
-          "Gestion complète de l'inventaire des médicaments",
-          "Suivi des prescriptions et historique patients",
-          "Analyses des ventes et rapports financiers",
-          "Interface utilisateur responsive avec Bootstrap",
-          "Architecture MVC avec Java EE",
-          "Base de données MySQL optimisée",
-          "Contrôle d'accès basé sur les rôles",
-          "Stockage de données chiffré et sécurisé"
+          "Architecture Spring Boot MVC avec sécurité",
+          "Interface web responsive avec Bootstrap 5",
+          "Gestion complète stocks et inventaire médicaments",
+          "Système de prescriptions et suivi patients",
+          "Dashboard analytics avec graphiques temps réel",
+          "Base de données PostgreSQL optimisée",
+          "API REST pour intégrations externes",
+          "Rapports PDF automatisés et exports"
         ]
       },
-      "callcenter": {
-        "title": "Application Desktop Call Center",
-        "description": "Application de centre d'appels développée avec JavaFX pour une interface utilisateur moderne. Connectée à une base de données MySQL pour la gestion des clients, l'enregistrement des appels et l'analyse des performances.",
-        "category": "Application Desktop",
+      "studentapi": {
+        "title": "Student Management API",
+        "description": "API REST complète CRUD documentée avec OpenAPI/Swagger pour gestion étudiants.",
+        "category": "API REST Backend",
+        "technologies": "Spring Boot, JPA, MySQL, Swagger",
         "features": [
-          "Gestion des clients et historique d'interactions",
-          "Enregistrement et suivi des appels",
-          "Analyses de performance et métriques",
-          "Interface moderne JavaFX",
-          "Connectivité base de données Java-MySQL",
-          "Séparation claire des préoccupations avec couche logique métier",
-          "Contrôle d'accès basé sur les rôles",
-          "Fonctionnalités de reporting avancées"
+          "API REST complète avec Spring Boot et JPA",
+          "Documentation OpenAPI/Swagger intégrée",
+          "CRUD complet avec validation des données",
+          "Base de données MySQL avec Hibernate",
+          "Tests unitaires et d'intégration JUnit",
+          "Authentification JWT et autorisation",
+          "Pagination et filtres avancés",
+          "Exception handling centralisé"
         ]
       },
-      "reservation": {
-        "title": "Gestion Des Réservations Swing",
-        "description": "Système de gestion des réservations développé en Java Swing avec programmation orientée objet. Intègre calendrier, confirmations automatiques et gestion complète des réservations.",
-        "category": "Application Desktop",
+      "benchmark": {
+        "title": "Benchmark REST APIs",
+        "description": "Analyse performance des APIs (latence, throughput) avec Node.js et Postman.",
+        "category": "Performance & Testing",
+        "technologies": "Node.js, Postman, Newman, Docker",
         "features": [
-          "Gestion des réservations et calendrier intégré",
-          "Confirmations automatiques par email",
-          "Architecture POO propre avec séparation des responsabilités",
-          "Interface utilisateur Java Swing",
-          "Gestion des conflits de réservation",
-          "Système de notification intégré",
-          "Reporting et analyses des réservations",
-          "Support multi-utilisateurs avec permissions"
+          "Framework de test de performance automatisé",
+          "Analyse latence, throughput et scalabilité",
+          "Tests de charge avec Newman et Postman",
+          "Monitoring temps réel des métriques",
+          "Rapports détaillés avec graphiques",
+          "Containerisation Docker pour reproductibilité",
+          "CI/CD intégration pour tests continus",
+          "Comparaison multi-APIs et benchmarking"
         ]
       },
       "network": {

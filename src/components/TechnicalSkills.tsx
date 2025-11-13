@@ -8,35 +8,27 @@ const TechnicalSkills = () => {
   const { t, i18n } = useTranslation()
   const isRTL = i18n.language === 'ar'
   const getSkillCategories = () => {
-    const networking = t('skills.items.networking', { returnObjects: true })
-    const programming = t('skills.items.programming', { returnObjects: true })
-    const tools = t('skills.items.tools', { returnObjects: true })
+    const frontend = t('skills.items.frontend', { returnObjects: true })
+    const backend = t('skills.items.backend', { returnObjects: true })
     const databases = t('skills.items.databases', { returnObjects: true })
+    const cloudops = t('skills.items.cloudops', { returnObjects: true })
 
     return [
       {
-        title: t('skills.categories.networking'),
-        icon: Shield,
-        color: "from-slate-600 to-slate-700",
-        bgColor: "bg-slate-100 dark:bg-slate-800",
-        textColor: "text-slate-700 dark:text-slate-300",
-        skills: Array.isArray(networking) ? networking : []
+        title: t('skills.categories.frontend'),
+        icon: Code,
+        color: "from-blue-600 to-blue-700",
+        bgColor: "bg-blue-50 dark:bg-slate-800",
+        textColor: "text-blue-700 dark:text-blue-400",
+        skills: Array.isArray(frontend) ? frontend : []
       },
       {
-        title: t('skills.categories.programming'),
-        icon: Code,
+        title: t('skills.categories.backend'),
+        icon: Settings,
         color: "from-emerald-600 to-emerald-700",
         bgColor: "bg-emerald-50 dark:bg-slate-800",
         textColor: "text-emerald-700 dark:text-emerald-400",
-        skills: Array.isArray(programming) ? programming : []
-      },
-      {
-        title: t('skills.categories.tools'),
-        icon: Settings,
-        color: "from-purple-600 to-purple-700",
-        bgColor: "bg-purple-50 dark:bg-slate-800",
-        textColor: "text-purple-700 dark:text-purple-400",
-        skills: Array.isArray(tools) ? tools : []
+        skills: Array.isArray(backend) ? backend : []
       },
       {
         title: t('skills.categories.databases'),
@@ -45,6 +37,14 @@ const TechnicalSkills = () => {
         bgColor: "bg-amber-50 dark:bg-slate-800",
         textColor: "text-amber-700 dark:text-amber-400",
         skills: Array.isArray(databases) ? databases : []
+      },
+      {
+        title: t('skills.categories.cloudops'),
+        icon: Shield,
+        color: "from-purple-600 to-purple-700",
+        bgColor: "bg-purple-50 dark:bg-slate-800",
+        textColor: "text-purple-700 dark:text-purple-400",
+        skills: Array.isArray(cloudops) ? cloudops : []
       }
     ]
   }
@@ -187,7 +187,7 @@ const TechnicalSkills = () => {
               <Award className="w-8 h-8 text-slate-700 dark:text-slate-300 mr-4" />
             </motion.div>
             <h3 className="text-3xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 dark:from-slate-200 dark:to-slate-400 bg-clip-text text-transparent">
-              Certifications
+              {t('skills.coursera.title') || "Coursera"}
             </h3>
           </motion.div>
           
@@ -222,7 +222,7 @@ const TechnicalSkills = () => {
                     {cert.year}
                   </p>
                   <div className="mt-3 text-xs text-slate-600 dark:text-slate-400 opacity-70 group-hover:opacity-100 transition-opacity">
-                    📜 Voir le certificat
+                    📜 {t('skills.coursera.viewCertificate') || "Voir le certificat"}
                   </div>
                 </motion.a>
               </motion.div>

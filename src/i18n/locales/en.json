@@ -9,22 +9,24 @@
   },
   "hero": {
     "greeting": "Hello, I'm",
-    "name": "SOHAIB LAARICHI",
+    "name": "LAARICHI SOHAIB",
     "fullName": "Sohaib Laarichi",
     "firstName": "Sohaib",
     "lastName": "Laarichi",
     "variations": ["Sohaib", "Laarichi", "Sohaib Laarichi", "SohaibLaarichi", "SOHAIB", "LAARICHI", "SOHAIB LAARICHI"],
     "titles": [
-      "Network & Software Engineer",
-      "Network Security Specialist",
-      "Full-Stack Developer",
-      "Systems Administrator",
-      "DevOps Engineer",
-      "Cloud Infrastructure Engineer",
-      "Java/Spring Boot Developer",
-      "Network Solutions Architect"
+      "Fullstack Web Developer",
+      "Systems & Development Engineer",
+      "Java | Spring Boot Specialist",
+      "React | Next.js | Node.js Expert",
+      "Backend & Frontend Developer",
+      "Web Applications Architect",
+      "MIAGE Fullstack Engineer",
+      "Full-Stack Java/JS Developer"
     ],
-    "description": "Final year Computer Engineering student (MIAGE option) at EMSI, specializing in network architecture, security, and systems administration. Skilled in Java, Spring Boot, Next.js, and Cisco technologies. Actively seeking an internship opportunity starting February 2026 to apply and develop my skills in designing and deploying network and software solutions.",
+    "description": "Engineering student in final year of MIAGE program at EMSI Marrakech, I design modern, performant and secure web applications using technologies like React, Next.js, Node.js, Java and Spring Boot. Passionate about software architecture, distributed systems and code quality, I'm seeking a 6-month end-of-studies internship starting February 2026 to contribute to innovative web projects.",
+    "skills": ["Fullstack", "Backend", "Frontend", "REST API", "Cloud"],
+    "location": "Marrakech, Morocco",
     "viewProjects": "View My Projects",
     "contactMe": "Contact Me",
     "scrollDown": "Scroll Down"
@@ -34,7 +36,7 @@
     "subtitle": "Get to know me better",
     "profile": {
       "title": "Professional Profile",
-      "description": "Final year Computer Engineering student (MIAGE option) at EMSI, specializing in network infrastructure and cybersecurity. My goal is to contribute to innovative technological solutions while developing my skills in network security and systems administration. Actively seeking an internship starting February 2026."
+      "description": "MIAGE Engineering student (EMSI Marrakech), passionate about Fullstack web development and software engineering. I have a hybrid profile combining web development (Java, Spring Boot, Node.js, React, Next.js, TypeScript), backend architecture & REST APIs, databases, and systems & network (Cisco, ADDS, Windows Server, Linux). I design reliable, clean and user-focused web applications. I'm actively seeking new opportunities to consolidate my expertise and contribute to impactful projects."
     },
     "education": {
       "title": "Education & Training",
@@ -75,55 +77,61 @@
         "Technical Communication",
         "Continuous Learning & Adaptability"
       ]
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Projects Completed",
+      "technologies": "Technologies Mastered"
     }
   },
   "skills": {
-    "title": "Technical Skills",
-    "subtitle": "Technologies and tools I work with",
+    "title": "Fullstack Web Skills",
+    "subtitle": "Modern technologies I master",
     "categories": {
-      "networking": "Network & Security",
-      "programming": "Programming Languages",
-      "databases": "Databases & Cloud",
-      "tools": "Development Tools"
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "cloudops": "Cloud & Ops"
     },
     "viewCertificate": "View Certificate",
     "items": {
-      "networking": [
-        "Cisco Router & Switch Configuration",
-        "Windows Server 2019/2022 Administration",
-        "Linux Administration (Ubuntu, CentOS)",
-        "TCP/IP Protocols, VLAN, OSPF",
-        "Network Security (Firewall, VPN)",
-        "VMware vSphere, Hyper-V",
-        "Cisco ISE (Identity Services Engine)"
+      "frontend": [
+        "React 18 & Next.js 14/15",
+        "JavaScript ES6+ & TypeScript",
+        "Tailwind CSS & Bootstrap 5",
+        "Framer Motion & React Query",
+        "HTML5/CSS3 & Responsive Design",
+        "Zustand & Context API"
       ],
-      "programming": [
-        "Java SE/EE",
-        "JavaScript ES6+",
-        "Node.js",
-        "HTML5/CSS3",
-        "TypeScript",
-        "Python 3.x",
-        "PowerShell"
+      "backend": [
+        "Java SE/EE & Spring Boot",
+        "Node.js & Express.js",
+        "REST APIs & JWT Authentication",
+        "Spring Security & Middleware",
+        "Microservices (basics)",
+        "MVC Architecture"
       ],
       "databases": [
-        "MySQL 8.0",
-        "MongoDB",
+        "MongoDB & Mongoose",
+        "MySQL & PostgreSQL",
+        "JPA & Hibernate",
         "Microsoft SQL Server",
-        "Oracle Database 19c",
-        "PostgreSQL",
-        "Microsoft Azure",
-        "Amazon Web Services"
+        "Redis (Cache)",
+        "Database Design"
       ],
-      "tools": [
-        "Spring Boot, Spring Security",
-        "Express.js Framework",
-        "Next.js 14/15",
-        "React 18",
-        "Bootstrap 5",
-        "Tailwind CSS",
-        "Git, GitHub"
+      "cloudops": [
+        "Azure & AWS (basics)",
+        "Docker & Containerization",
+        "Git & GitHub",
+        "CI/CD Pipeline",
+        "Postman & API Testing",
+        "Linux & Windows Server"
       ]
+    },
+    "coursera": {
+      "title": "Coursera",
+      "subtitle": "Online Certifications",
+      "viewCertificate": "View Certificate"
     }
   },
   "experience": {
